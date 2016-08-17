@@ -4,8 +4,19 @@ import java.util.Arrays;
 
 import com.ars.complexnumbers.ComplexMath;
 import com.ars.complexnumbers.ComplexNumber;
-
+/**
+ * Implementations of basic operations with 2D arrays
+ * 
+ *
+ */
 public class MatrixOperations {
+	
+	/**
+	 * Performs the multiplication between 2 2D arrays of double
+	 * @param a 
+	 * @param b
+	 * @return 2D array of double
+	 */
 	public static double[][] multiply(double[][] a, double[][] b) {
 		int numberOfRows = a[0].length;
 		int numberOfColls = a.length;
@@ -29,6 +40,12 @@ public class MatrixOperations {
 		return multiply;
 	}
 
+	/**
+	 * Performs the multiplication between 2 2D arrays of complex numbers
+	 * @param a 
+	 * @param b
+	 * @return 2D array of complex numbers
+	 */
 	public static ComplexNumber[][] multiply(ComplexNumber[][] a, ComplexNumber[][] b) {
 		int numberOfRows = a[0].length;
 		int numberOfColls = a.length;
@@ -53,6 +70,12 @@ public class MatrixOperations {
 		return multiply;
 	}
 
+	/**
+	 * Performs the sum between 2 2D arrays of double
+	 * @param a 
+	 * @param b
+	 * @return 2D array of double
+	 */
 	public static double[][] add(double[][] a, double[][] b) {
 		double[][] result = null;
 		int numberOfRows = a[0].length;
@@ -69,6 +92,12 @@ public class MatrixOperations {
 		return result;
 	}
 
+	/**
+	 * Performs the sum between 2 2D arrays of complex numbers
+	 * @param a 
+	 * @param b
+	 * @return 2D array of complex numbers
+	 */
 	public static ComplexNumber[][] add(ComplexNumber[][] a, ComplexNumber[][] b) {
 		ComplexNumber[][] result = null;
 		int numberOfRows = a[0].length;
@@ -85,6 +114,12 @@ public class MatrixOperations {
 		return result;
 	}
 
+	/**
+	 * Performs the subtract between 2 2D arrays of double
+	 * @param a 
+	 * @param b
+	 * @return 2D array of double
+	 */
 	public static double[][] subtract(double[][] a, double[][] b) {
 		double[][] result = null;
 		int numberOfRows = a[0].length;
@@ -101,6 +136,12 @@ public class MatrixOperations {
 		return result;
 	}
 
+	/**
+	 * Performs the subtract between 2 2D arrays of complex numbers
+	 * @param a 
+	 * @param b
+	 * @return 2D array of complex numbers
+	 */
 	public static ComplexNumber[][] subtract(ComplexNumber[][] a, ComplexNumber[][] b) {
 		ComplexNumber[][] result = null;
 		int numberOfRows = a[0].length;
@@ -117,6 +158,12 @@ public class MatrixOperations {
 		return result;
 	}
 
+	/**
+	 * Check if 2 2D arrays of double are equal.
+	 * @param a 
+	 * @param b
+	 * @return boolean true if the two matrices are equal, otherwise false.
+	 */
 	public static boolean areEqual(double[][] a, double[][] b) {
 		int numberOfRows = a[0].length;
 		int numberOfColls = a.length;
@@ -134,6 +181,12 @@ public class MatrixOperations {
 		return false;
 	}
 
+	/**
+	 * Check if 2 2D arrays of complex numbers are equal.
+	 * @param a 
+	 * @param b
+	 * @return boolean true if the two matrices are equal, otherwise false.
+	 */
 	public static boolean areEqual(ComplexNumber[][] a, ComplexNumber[][] b) {
 		int numberOfRows = a[0].length;
 		int numberOfColls = a.length;
@@ -165,6 +218,12 @@ public class MatrixOperations {
 		return result;
 	}
 
+	/**
+	 * Performs the tensor product between 2 2D arrays of double
+	 * @param a 
+	 * @param b
+	 * @return 2D array of double
+	 */
 	public static double[][] tensorProduct(double[][] a, double[][] b) {
 		int k = 0;
 		int numberOfRowsMatrixA = a[0].length;

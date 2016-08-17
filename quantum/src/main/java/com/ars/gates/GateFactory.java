@@ -1,7 +1,17 @@
 package com.ars.gates;
-
+/**
+ * 
+ * Implementation of a Gate Factory.
+ *
+ */
 public class GateFactory extends GatesAbstractFactory {
 
+	/**
+	 * getGate return a new <code>Gate</code> object
+	 * @param id specify the type of gate.
+	 * @return gate 
+	 *  
+	 */
 	public IGate getGate(EGateTypes id) {
 		IGate gate = null;
 		switch (id) {

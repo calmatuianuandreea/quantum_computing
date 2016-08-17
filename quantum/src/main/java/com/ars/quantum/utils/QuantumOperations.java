@@ -6,15 +6,33 @@ import com.ars.complexnumbers.ComplexMath;
 import com.ars.complexnumbers.ComplexNumber;
 import com.ars.gates.IGate;
 import com.ars.qubits.Qubit;
-
+/**
+ * Implementations of basic operations that can be applied on qubits.
+ * 
+ *
+ */
 public class QuantumOperations {
 
+	/**
+	 * Performs the tensor product of two qubits. Example, if q1=|0> and q2=|1> the method will return |01>.
+	 * @param q1 
+	 * @param q2
+	 * @return qubit the tensor product of the two qubits.
+	 */
 	public static Qubit entangle(Qubit q1, Qubit q2) {
 
 		return performTensorProduct(q1, q2);
 	}
 
+	/**
+	 * Perform the tensor product between two or more qubits. Example, for three qubits |0>, |0> and |1>, the result will be |001>.
+	 * @param qubitsList
+	 * @return qubit the tensor product of the two qubits.
+	 */
 	public static Qubit entangle(List<Qubit> qubitsList) {
+		if(qubitsList.size()<2){
+			return null;
+		}
 		Qubit bufferQubit = qubitsList.get(0);
 		for (int i = 1; i < qubitsList.size(); i++) {
 			bufferQubit = performTensorProduct(bufferQubit, qubitsList.get(i));
@@ -35,6 +53,7 @@ public class QuantumOperations {
 
 		return new Qubit(complexNumberList);
 	}
+	
 
 	private static Qubit apply(Qubit q,double[][] gate){
 		int qubitVectorLength = q.getQubit().length;
@@ -56,16 +75,24 @@ public class QuantumOperations {
 
 	}
 	
+	/**
+	 * Apply a specified Gate to a qubit. 
+	 * @param q qubit.
+	 * @param gate
+	 * @return qubit
+	 */
 	public static Qubit applyGate(Qubit q, IGate gate) {
 		return apply(q,gate.getUnitaryMatrix());
 	}
 	
+	/**
+	 * Apply a specified Gate to a qubit. 
+	 * @param q qubit.
+	 * @param gate
+	 * @return qubit
+	 */
 	public static Qubit applyGate(Qubit q, double[][] gate) {
 		return apply(q,gate);
 	}
 	
-	public void measure(){
-		//TODO: not-implemented!
-	}
-
 }
