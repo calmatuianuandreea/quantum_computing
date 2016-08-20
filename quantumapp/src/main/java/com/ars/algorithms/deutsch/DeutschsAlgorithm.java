@@ -52,7 +52,7 @@ public class DeutschsAlgorithm extends QuantumAlgorithms {
 		resultQubit = QuantumOperations.applyGate(QuantumOperations.applyGate(
 				QuantumOperations.applyGate(
 						QuantumOperations.entangle(QUBIT_0, QuantumOperations.applyGate(QUBIT_0, gateX)), gateHH),
-				functionOperator), gateHH);
+				oracle), gateHH);
 		log.info("Finished running algorithm.");
 	}
 

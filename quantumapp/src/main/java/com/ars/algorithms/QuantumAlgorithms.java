@@ -7,7 +7,7 @@ import com.ars.gates.GateProducer;
 import com.ars.gates.GatesAbstractFactory;
 
 public abstract class QuantumAlgorithms {
-	protected double[][]			functionOperator;
+	protected double[][]			oracle;
 	protected GatesAbstractFactory	gateFactory			= GateProducer.getGateFactory();
 	private static final Logger		QUANTUM_ALGO_LOGGER	= LogManager.getLogger(QuantumAlgorithms.class);
 
@@ -15,12 +15,12 @@ public abstract class QuantumAlgorithms {
 
 	}
 
-	public QuantumAlgorithms(double[][] functionOperator) {
-		this.functionOperator = functionOperator;
+	public QuantumAlgorithms(double[][] oracle) {
+		this.oracle = oracle;
 	}
 
-	public void setFunction(double[][] functionOperator) {
-		this.functionOperator = functionOperator;
+	public void setOracle(double[][] oracle) {
+		this.oracle = oracle;
 	}
 
 	public abstract void init();
