@@ -118,4 +118,53 @@ public class QuantumOperationsTest {
 		assertEquals(true, expectedResultQ0.equals(QuantumOperations.applyGate(q0, gate.getUnitaryMatrix())));
 		assertEquals(true, expectedResultQ1.equals(QuantumOperations.applyGate(q1, gate.getUnitaryMatrix())));
 	}
+	
+	@Test
+	public void testCalculateOuterProduct(){
+		ComplexNumber[][] expected=new ComplexNumber[][]{
+			{new ComplexNumber(1.0,0.0),new ComplexNumber(0.0,0.0)},
+			{new ComplexNumber(0.0,0.0),new ComplexNumber(0.0,0.0)}	};
+		ComplexNumber[][] actual=QuantumOperations.outerProduct(new QubitZero(), new QubitZero());
+		for(int i=0;i<actual.length;i++){
+			for(int j=0;j<actual[0].length;j++){
+				assertEquals(expected[i][j], actual[i][j]);
+			}
+		}
+		actual=QuantumOperations.outerProduct(new QubitZero().getQubit(), new QubitZero().getQubit());
+		for(int i=0;i<actual.length;i++){
+			for(int j=0;j<actual[0].length;j++){
+				assertEquals(expected[i][j], actual[i][j]);
+			}
+		}
+	}
+	
+	@Test
+	public void testInnerProduct(){
+		ComplexNumber[] a=new ComplexNumber[]{new ComplexNumber(1.0,0.0),new ComplexNumber(2.0,0.0)};
+		ComplexNumber[] b=new ComplexNumber[]{new ComplexNumber(3.0,0.0),new ComplexNumber(4.0,0.0)};
+		ComplexNumber expected=new ComplexNumber(11.0,0.0);
+		ComplexNumber[][] aTransposed=QuantumOperations.transpose(a);
+		assertEquals(expected, QuantumOperations.innerProduct(a, b));
+		assertEquals(expected, QuantumOperations.innerProduct(new Qubit(a), new Qubit(b)));
+	}
+	
+	@Test
+	public void testTranspose(){
+		ComplexNumber[][] expected=new ComplexNumber[][]{
+			{new ComplexNumber(1.0,0.0),new ComplexNumber(0.0,0.0)}};
+		ComplexNumber[][] actual=QuantumOperations.transpose(new QubitZero());
+		for(int i=0;i<actual.length;i++){
+			for(int j=0;j<actual[0].length;j++){
+				assertEquals(expected[i][j], actual[i][j]);
+			}
+		}
+		actual=QuantumOperations.transpose(new QubitZero().getQubit());
+		for(int i=0;i<actual.length;i++){
+			for(int j=0;j<actual[0].length;j++){
+				assertEquals(expected[i][j], actual[i][j]);
+			}
+		}
+	}
+	
+	
 }

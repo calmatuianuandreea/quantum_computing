@@ -77,4 +77,24 @@ public class QubitTest {
 		assertNotEquals(QuantumOperations.entangle(new QubitOne(), new QubitOne()),
 				QuantumOperations.entangle(new QubitZero(), new QubitOne()));
 	}
+	
+	@Test
+	public void testValid(){
+		Qubit q=new QubitZero();
+		assertTrue(q.isValid());
+	}
+	
+	@Test
+	public void testQubitPlus() {
+		ComplexNumber[] expectedQubit = { new ComplexNumber(1.0 / Math.sqrt(2), 0.0), new ComplexNumber(1.0 / Math.sqrt(2), 0.0)};
+		Qubit q1 = new QubitPlus();
+		assertArrayEquals(expectedQubit, q1.getQubit());
+	}
+	
+	@Test
+	public void testQubitMinus() {
+		ComplexNumber[] expectedQubit = {new ComplexNumber(1.0 / Math.sqrt(2), 0.0), new ComplexNumber(-1.0 / Math.sqrt(2), 0.0) };
+		Qubit q1 = new QubitMinus();
+		assertArrayEquals(expectedQubit, q1.getQubit());
+	}
 }

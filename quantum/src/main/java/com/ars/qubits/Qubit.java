@@ -9,6 +9,7 @@ package com.ars.qubits;
  */
 import java.util.Arrays;
 
+import com.ars.complexnumbers.ComplexMath;
 import com.ars.complexnumbers.ComplexNumber;
 
 public class Qubit {
@@ -90,5 +91,18 @@ public class Qubit {
 		int hash = 5;
 		hash += (this.qubitVector != null ? Arrays.hashCode(qubitVector) : 0);
 		return hash;
+	}
+	
+	/**
+	 * Check if qubit state is valid
+	 * @return true if the state is valid, otherwise false
+	 */
+	public boolean isValid(){
+		double sum=0.0;
+		for(ComplexNumber c:this.qubitVector){
+			double mod=ComplexMath.mod(c);
+			sum+=mod*mod;
+		}
+		return (sum==1.0);
 	}
 }

@@ -20,7 +20,7 @@ public class DeutschsAlgorithm extends QuantumAlgorithms {
 	private double[][]			gateHH;
 	private static final Qubit	QUBIT_0	= new QubitZero();
 	private static final Qubit	QUBIT_1	= new QubitOne();
-	private Qubit				resultQubit;
+
 	private double[]			measurementResults;
 	private Logger				log		= getLogger();
 
