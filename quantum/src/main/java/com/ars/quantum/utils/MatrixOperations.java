@@ -313,4 +313,31 @@ public class MatrixOperations {
 		return result;
 	}
 
+	public static ComplexNumber[][] generateIdentityMatrix(int numberOfRows) {
+		ComplexNumber[][] identityMatrix = new ComplexNumber[numberOfRows][numberOfRows];
+		for (int i = 0; i < numberOfRows; i++) {
+			for (int j = 0; j < numberOfRows; j++) {
+				if (i == j) {
+					identityMatrix[i][j] = new ComplexNumber(1.0, 0.0);
+					continue;
+				}
+
+				identityMatrix[i][j] = new ComplexNumber(0.0, 0.0);
+
+			}
+		}
+		return identityMatrix;
+	}
+	
+	public static ComplexNumber[][] multiplyByConstant(ComplexNumber[][] a,double ct){
+		int numberOfRows=a.length;
+		int numberOfColls=a[0].length;
+		ComplexNumber[][] resultMatrix=new ComplexNumber[numberOfRows][numberOfColls];
+		for(int i=0;i<numberOfRows;i++){
+			for(int j=0;j<numberOfColls;j++){
+				resultMatrix[i][j]=ComplexMath.multiply(a[i][j], ct);
+			}
+		}
+		return resultMatrix;
+	}
 }

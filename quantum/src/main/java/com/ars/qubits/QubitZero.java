@@ -3,7 +3,7 @@ package com.ars.qubits;
 import com.ars.complexnumbers.ComplexNumber;
 /**
 * <h1>QubitZero</h1>
-* Representation of the qubit |0>=[0,1].
+* Representation of the qubit |0>=[1,0].
 */
 public class QubitZero extends Qubit {
 
