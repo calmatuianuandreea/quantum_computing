@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.function.Function;
 
@@ -25,14 +26,10 @@ public class GroversAlgorithm extends QuantumAlgorithms {
 	private static final Qubit QUBIT_0 = new QubitZero();
 	private Qubit qubitPlus;
 
-	private double[][] oracleMatrix = { 
-			{ 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
-			{ 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, 
-			{ 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
-			{ 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0 },
-			{ 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0 },
-			{ 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0 }, 
-			{ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0 },
+	private double[][] oracleMatrix = { { 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+			{ 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 }, { 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0 },
+			{ 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0 }, { 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0 },
+			{ 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0 }, { 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0 },
 			{ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -1.0 } };
 	private BufferedWriter bw;
 	private ComplexNumber[][] diffusionMatrix;
@@ -46,24 +43,23 @@ public class GroversAlgorithm extends QuantumAlgorithms {
 		}
 	}
 
-	
-	private void generateDiffusionMatrix(){
-		diffusionMatrix = QuantumOperations.outerProduct(qubitPlus,qubitPlus);
-		diffusionMatrix=MatrixOperations.multiplyByConstant(diffusionMatrix, 2);
+	private void generateDiffusionMatrix() {
+		diffusionMatrix = QuantumOperations.outerProduct(qubitPlus, qubitPlus);
+		diffusionMatrix = MatrixOperations.multiplyByConstant(diffusionMatrix, 2);
 		ComplexNumber[][] identityMatrix = MatrixOperations.generateIdentityMatrix(8);
-		diffusionMatrix=MatrixOperations.subtract(diffusionMatrix, identityMatrix);
+		diffusionMatrix = MatrixOperations.subtract(diffusionMatrix, identityMatrix);
 	}
-	
+
 	@Override
 	public void init() {
 		gateH = gateFactory.getGate(EGateTypes.E_HadamardGate);
 		resultQubit = QUBIT_0;
-		qubitPlus=new QubitPlus();
+		qubitPlus = new QubitPlus();
 		for (int i = 0; i < NO_OF_INPUT - 1; i++) {
 			resultQubit = QuantumOperations.entangle(resultQubit, QUBIT_0);
 		}
-		for(int i=0;i<NO_OF_INPUT-1;i++){
-			qubitPlus=QuantumOperations.entangle(qubitPlus, new QubitPlus());
+		for (int i = 0; i < NO_OF_INPUT - 1; i++) {
+			qubitPlus = QuantumOperations.entangle(qubitPlus, new QubitPlus());
 		}
 		gateHn = gateH.getUnitaryMatrix();
 		for (int i = 0; i < NO_OF_INPUT - 1; i++) {
@@ -81,34 +77,30 @@ public class GroversAlgorithm extends QuantumAlgorithms {
 			resultQubit = QuantumOperations.applyGate(resultQubit, oracleMatrix);
 			resultQubit = QuantumOperations.applyGate(resultQubit, diffusionMatrix);
 		}
-		assert(resultQubit.isValid()==true);
+		assert (resultQubit.isValid() == true);
 	}
 
-
 	@Override
-	public void measure(){
-		MeasurementPerformer measurementPerformer=new MeasurementPerformer().configure(resultQubit);
-		resultQubit=measurementPerformer.measure();
-		
-		
+	public void measure() {
+		MeasurementPerformer measurementPerformer = new MeasurementPerformer().configure(resultQubit);
+		resultQubit = measurementPerformer.measure();
+
 		try {
-			
-			for(ComplexNumber c:resultQubit.getQubit()){
-				bw.write(c.getReal()+",");
-				
+
+			for (ComplexNumber c : resultQubit.getQubit()) {
+				bw.write(c.getReal() + ",");
+
 			}
 			bw.write("\n");
-//			bw.newLine();
-//			bw.flush();
+			// bw.newLine();
+			// bw.flush();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 	}
-	
-	
+
 	public void close() {
 		try {
 			bw.close();
@@ -127,26 +119,24 @@ public class GroversAlgorithm extends QuantumAlgorithms {
 		return x & y & z;
 	}
 
-	// public void createOracleMatrix() {
-	// int noOfRows = (int) Math.pow(2, NO_OF_INPUT);
-	// oracleMatrix = new double[noOfRows][noOfRows];
-	// for (int i = 0; i < noOfRows; i++)
-	// Arrays.fill(oracleMatrix[i], 0);
-	// int count = 0x00;
-	// for (int i = 0; i < noOfRows; i++) {
-	// for (int j = 0; j < noOfRows; j++) {
-	// if (i == j) {
-	// int value = oracle(
-	// val -> and((count & (1 << 0)), (count & (1 << 1)) , (count & (1 << 2))));
-	//
-	// oracleMatrix[i][j] = Math.pow(-1, value);
-	//
-	//
-	// }
-	// }
-	// }
-	//
-	// }
+	public void createOracleMatrix() {
+		int noOfRows = (int) Math.pow(2, NO_OF_INPUT);
+		oracleMatrix = new double[noOfRows][noOfRows];
+		for (int i = 0; i < noOfRows; i++)
+			Arrays.fill(oracleMatrix[i], 0);
+		int count = 0x00;
+		for (int i = 0; i < noOfRows; i++) {
+			for (int j = 0; j < noOfRows; j++) {
+				if (i == j) {
+					int value = oracle(val -> and((count & (1 << 0)), (count & (1 << 1)), (count & (1 << 2))));
+
+					oracleMatrix[i][j] = Math.pow(-1, value);
+
+				}
+			}
+		}
+
+	}
 
 	private <T, R> R oracle(Function<T, R> f) {
 		// |x>-> (-1)^f(x)|x>
