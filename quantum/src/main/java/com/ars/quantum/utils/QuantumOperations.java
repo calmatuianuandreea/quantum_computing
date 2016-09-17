@@ -18,8 +18,8 @@ public class QuantumOperations {
 	 * Performs the tensor product of two qubits. Example, if q1=|0> and q2=|1>
 	 * the method will return |01>.
 	 * 
-	 * @param q1
-	 * @param q2
+	 * @param q1 first qubit
+	 * @param q2 second qubit
 	 * @return qubit the tensor product of the two qubits.
 	 */
 	public static Qubit entangle(Qubit q1, Qubit q2) {
@@ -31,7 +31,7 @@ public class QuantumOperations {
 	 * Perform the tensor product between two or more qubits. Example, for three
 	 * qubits |0>, |0> and |1>, the result will be |001>.
 	 * 
-	 * @param qubitsList
+	 * @param qubitsList list of qubits
 	 * @return qubit the tensor product of the two qubits.
 	 */
 	public static Qubit entangle(List<Qubit> qubitsList) {
@@ -102,9 +102,8 @@ public class QuantumOperations {
 	/**
 	 * Apply a specified Gate to a qubit.
 	 * 
-	 * @param q
-	 *            qubit.
-	 * @param gate
+	 * @param q qubit.
+	 * @param gate gate that will be applied
 	 * @return qubit
 	 */
 	public static Qubit applyGate(Qubit q, IGate gate) {
@@ -114,9 +113,8 @@ public class QuantumOperations {
 	/**
 	 * Apply a specified Gate to a qubit.
 	 * 
-	 * @param q
-	 *            qubit.
-	 * @param gate
+	 * @param q qubit.
+	 * @param gate gate that will be applied
 	 * @return qubit
 	 */
 	public static Qubit applyGate(Qubit q, double[][] gate) {
@@ -126,9 +124,8 @@ public class QuantumOperations {
 	/**
 	 * Apply a specified Gate to a qubit.
 	 * 
-	 * @param q
-	 *            qubit.
-	 * @param gate
+	 * @param q qubit.
+	 * @param gate gate that will be applied
 	 * @return qubit
 	 */
 	public static Qubit applyGate(Qubit q,ComplexNumber[][] gate){
@@ -148,8 +145,7 @@ public class QuantumOperations {
 	/**
 	 * Calculate the transpose of qubit; |q>-> <q|
 	 * 
-	 * @param q
-	 *            qubit.
+	 * @param q qubit.
 	 * @return ComplexNumber[][]
 	 */
 	public static ComplexNumber[][] transpose(Qubit q) {
@@ -159,8 +155,7 @@ public class QuantumOperations {
 	/**
 	 * Calculate the transpose of qubit; |q>-> <q|
 	 * 
-	 * @param q
-	 *            qubit.
+	 * @param q qubit.
 	 * @return ComplexNumber[][]
 	 */
 	public static ComplexNumber[][] transpose(ComplexNumber[] z) {
@@ -193,8 +188,8 @@ public class QuantumOperations {
 	/**
 	 * Performs the outer product of two qubits |q1><q2|
 	 * 
-	 * @param q1
-	 * @param q2
+	 * @param q1 first qubit
+	 * @param q2 second qubit
 	 * @return ComplexNumber the outer product of the two qubits.
 	 */
 	public static ComplexNumber[][] outerProduct(Qubit q1, Qubit q2) {
@@ -204,8 +199,8 @@ public class QuantumOperations {
 	/**
 	 * Performs the outer product of two qubits |q1><q2|
 	 * 
-	 * @param z1
-	 * @param z2
+	 * @param z1 first qubit
+	 * @param z2 second qubit
 	 * @return ComplexNumber the outer product of the two qubits.
 	 */
 	public static ComplexNumber[][] outerProduct(ComplexNumber[] z1, ComplexNumber[] z2) {
@@ -228,8 +223,8 @@ public class QuantumOperations {
 	/**
 	 * Performs the outer product of two qubits <q1|q2>
 	 * 
-	 * @param q1
-	 * @param q2
+	 * @param q1 first qubit
+	 * @param q2 second qubit
 	 * @return ComplexNumber the outer product of the two qubits.
 	 */
 	public static ComplexNumber innerProduct(Qubit q1, Qubit q2) {
@@ -239,8 +234,8 @@ public class QuantumOperations {
 	/**
 	 * Performs the outer product of two qubits <q1|q2>
 	 * 
-	 * @param z1
-	 * @param z2
+	 * @param z1 first qubit
+	 * @param z2 second qubit
 	 * @return ComplexNumber the outer product of the two qubits.
 	 */
 	public static ComplexNumber innerProduct(ComplexNumber[] z1, ComplexNumber[] z2) {

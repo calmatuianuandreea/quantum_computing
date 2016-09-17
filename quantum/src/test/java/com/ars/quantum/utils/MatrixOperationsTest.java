@@ -209,11 +209,25 @@ public class MatrixOperationsTest {
 	}
 	
 	@Test
-	public void testMatrixArrayMultiplication(){
-		ComplexNumber [][] a={{new ComplexNumber(1.0,0.0),new ComplexNumber(2.0,0.0)},{new ComplexNumber(3.0,0.0),new ComplexNumber(4.0,0.0)}};
-		ComplexNumber[] b={new ComplexNumber(5.0,0.0),new ComplexNumber(6.0,0.0)};
-		ComplexNumber[] expected={new ComplexNumber(17.0,0.0),new ComplexNumber(39.0,0.0)};
-		ComplexNumber[] actual=MatrixOperations.matrixArrayMultiplication(a, b);
-		assertArrayEquals(expected, actual);
+	public void testGenerateIdentityMatrix(){
+		ComplexNumber [][] expected={{new ComplexNumber(1.0,0.0),new ComplexNumber(0.0,0.0)},{new ComplexNumber(0.0,0.0),new ComplexNumber(1.0,0.0)}};
+		ComplexNumber[][] actual=MatrixOperations.generateIdentityMatrix(2);
+		for(int i=0;i<2;i++){
+			for(int j=0;j<2;j++){
+				assertEquals(expected[i][j], actual[i][j]);
+			}
+		}
+	}
+	
+	@Test
+	public void testMultiplyByConstant(){
+		ComplexNumber [][] a={{new ComplexNumber(1.0,0.0),new ComplexNumber(0.0,0.0)},{new ComplexNumber(0.0,0.0),new ComplexNumber(1.0,0.0)}};
+		ComplexNumber [][] expected={{new ComplexNumber(2.0,0.0),new ComplexNumber(0.0,0.0)},{new ComplexNumber(0.0,0.0),new ComplexNumber(2.0,0.0)}};
+		ComplexNumber [][] actual=MatrixOperations.multiplyByConstant(a, 2);
+		for(int i=0;i<2;i++){
+			for(int j=0;j<2;j++){
+				assertEquals(expected[i][j], actual[i][j]);
+			}
+		}
 	}
 }

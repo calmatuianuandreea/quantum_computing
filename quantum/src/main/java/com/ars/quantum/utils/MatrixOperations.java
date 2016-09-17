@@ -15,8 +15,8 @@ public class MatrixOperations {
 	/**
 	 * Performs the multiplication between 2 2D arrays of double
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return 2D array of double
 	 */
 	public static double[][] multiply(double[][] a, double[][] b) {
@@ -45,8 +45,8 @@ public class MatrixOperations {
 	/**
 	 * Performs the multiplication between 2 2D arrays of complex numbers
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return 2D array of complex numbers
 	 */
 	public static ComplexNumber[][] multiply(ComplexNumber[][] a, ComplexNumber[][] b) {
@@ -76,8 +76,8 @@ public class MatrixOperations {
 	/**
 	 * Performs the sum between 2 2D arrays of double
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return 2D array of double
 	 */
 	public static double[][] add(double[][] a, double[][] b) {
@@ -99,8 +99,8 @@ public class MatrixOperations {
 	/**
 	 * Performs the sum between 2 2D arrays of complex numbers
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return 2D array of complex numbers
 	 */
 	public static ComplexNumber[][] add(ComplexNumber[][] a, ComplexNumber[][] b) {
@@ -122,8 +122,8 @@ public class MatrixOperations {
 	/**
 	 * Performs the subtract between 2 2D arrays of double
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return 2D array of double
 	 */
 	public static double[][] subtract(double[][] a, double[][] b) {
@@ -145,8 +145,8 @@ public class MatrixOperations {
 	/**
 	 * Performs the subtract between 2 2D arrays of complex numbers
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return 2D array of complex numbers
 	 */
 	public static ComplexNumber[][] subtract(ComplexNumber[][] a, ComplexNumber[][] b) {
@@ -168,8 +168,8 @@ public class MatrixOperations {
 	/**
 	 * Check if 2 2D arrays of double are equal.
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return boolean true if the two matrices are equal, otherwise false.
 	 */
 	public static boolean areEqual(double[][] a, double[][] b) {
@@ -192,8 +192,8 @@ public class MatrixOperations {
 	/**
 	 * Check if 2 2D arrays of complex numbers are equal.
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return boolean true if the two matrices are equal, otherwise false.
 	 */
 	public static boolean areEqual(ComplexNumber[][] a, ComplexNumber[][] b) {
@@ -230,8 +230,8 @@ public class MatrixOperations {
 	/**
 	 * Performs the tensor product between 2 2D arrays of double
 	 * 
-	 * @param a
-	 * @param b
+	 * @param a first 2D array
+	 * @param b second 2D array
 	 * @return 2D array of double
 	 */
 	public static double[][] tensorProduct(double[][] a, double[][] b) {
@@ -258,9 +258,9 @@ public class MatrixOperations {
 	/**
 	 * Performs the tensor product between 2 2D arrays of complex numbers
 	 * 
-	 * @param a
-	 * @param b
-	 * @return 2D array of double
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of complex numbers
 	 */
 	public static ComplexNumber[][] tensorProduct(ComplexNumber[][] a, ComplexNumber[][] b) {
 		int k = 0;
@@ -300,19 +300,12 @@ public class MatrixOperations {
 		return result;
 	}
 
-	public static ComplexNumber[] matrixArrayMultiplication(ComplexNumber[][] q1, ComplexNumber[] q2) {
-		ComplexNumber[] result = new ComplexNumber[q2.length];
-		for (int i = 0; i < result.length; i++) {
-			result[i] = new ComplexNumber(0.0, 0.0);
-		}
-		for (int i = 0; i < q1.length; i++) {
-			for (int j = 0; j < q2.length; j++) {
-				result[i] = ComplexMath.add(result[i], ComplexMath.multiply(q1[i][j], q2[j]));
-			}
-		}
-		return result;
-	}
 
+	/**
+	 * Generate an Identity matrix
+	 * @param numberOfRows the number of rows of the identity matrix
+	 * @return 2D array of complex numbers
+	 */
 	public static ComplexNumber[][] generateIdentityMatrix(int numberOfRows) {
 		ComplexNumber[][] identityMatrix = new ComplexNumber[numberOfRows][numberOfRows];
 		for (int i = 0; i < numberOfRows; i++) {
@@ -329,6 +322,12 @@ public class MatrixOperations {
 		return identityMatrix;
 	}
 	
+	/**
+	 * Perform multiplication between a matrix and a constant.
+	 * @param a matrix
+	 * @param ct constant
+	 * @return 2D array of complex numbers
+	 */
 	public static ComplexNumber[][] multiplyByConstant(ComplexNumber[][] a,double ct){
 		int numberOfRows=a.length;
 		int numberOfColls=a[0].length;

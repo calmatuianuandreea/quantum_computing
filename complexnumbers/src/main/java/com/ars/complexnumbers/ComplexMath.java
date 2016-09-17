@@ -152,7 +152,7 @@ public class ComplexMath {
 
 	/**
 	 * Performs the multiplication of a complex number with a double.
-	 * @param z1 complex number
+	 * @param z complex number
 	 * @param constant double number
 	 * @return the result of multiplication.
 	 */
