@@ -2,11 +2,6 @@
 |-----------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [![Build Status](https://travis-ci.org/ardeleanasm/quantum_computing.svg?branch=master)](https://travis-ci.org/ardeleanasm/quantum_computing) | [![codecov](https://codecov.io/gh/ardeleanasm/quantum_computing/branch/master/graph/badge.svg)](https://codecov.io/gh/ardeleanasm/quantum_computing) |
 
-[![Build Status](https://travis-ci.org/ardeleanasm/quantum_computing.svg?branch=master)](https://travis-ci.org/ardeleanasm/quantum_computing)
-
-
- Copy Markdown
-[![codecov](https://codecov.io/gh/ardeleanasm/quantum_computing/branch/master/graph/badge.svg)](https://codecov.io/gh/ardeleanasm/quantum_computing)
 # Quantum Computing
 
 This project contains libraries written in Java for simulating quantum algorithms. I created this libraries because I saw that there is a lack of libraries for Java that simulate quantum algorithms and the already existing Java based simulators don't expose the API for using it in new projects.
