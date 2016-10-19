@@ -2,5 +2,4 @@ language: java
 jdk:
   - oraclejdk8
 sudo: false
-before_install: cd complexnumbers
-script: mvn test
+script: cd complexnumbers && mvn test
