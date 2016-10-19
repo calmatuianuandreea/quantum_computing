@@ -4,3 +4,5 @@ jdk:
 sudo: false
 before_install: chmod ugo+x ci_script.sh
 script: ./ci_script.sh
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
