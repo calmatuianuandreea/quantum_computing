@@ -2,4 +2,8 @@ language: java
 jdk:
   - oraclejdk8
 sudo: false
-script: cd complexnumbers && mvn test
+script: 
+  cd complexnumbers 
+  mvn install test
+  cd ../quantum
+  mvn install test
