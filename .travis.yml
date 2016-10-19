@@ -3,5 +3,4 @@ jdk:
   - oraclejdk8
 sudo: false
 before_install: cd complexnumbers
-script: mvn clean verify
-
+script: mvn test
