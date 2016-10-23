@@ -1,5 +1,6 @@
 package com.ars.algorithms.deutsch;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.ars.algorithms.QuantumAlgorithms;
@@ -14,7 +15,7 @@ import com.ars.qubits.QubitOne;
 import com.ars.qubits.QubitZero;
 
 public class DeutschsAlgorithm extends QuantumAlgorithms {
-
+	private static final Logger	LOGGER	= LogManager.getLogger(QuantumAlgorithms.class);
 	private IGate				gateH;
 	private IGate				gateX;
 	private double[][]			gateHH;
@@ -22,7 +23,6 @@ public class DeutschsAlgorithm extends QuantumAlgorithms {
 	private static final Qubit	QUBIT_1	= new QubitOne();
 
 	private double[]			measurementResults;
-	private Logger				log		= getLogger();
 
 	public DeutschsAlgorithm(double[][] testedFunctionOperator) {
 		super(testedFunctionOperator);
@@ -35,11 +35,11 @@ public class DeutschsAlgorithm extends QuantumAlgorithms {
 
 	@Override
 	public void init() {
-		log.info("Started initialization...");
+		LOGGER.info("Started initialization...");
 		gateH = gateFactory.getGate(EGateTypes.E_HadamardGate);
 		gateX = gateFactory.getGate(EGateTypes.E_XGate);
 		gateHH = MatrixOperations.tensorProduct(gateH.getUnitaryMatrix(), gateH.getUnitaryMatrix());
-		log.info("Finished initialization.");
+		LOGGER.info("Finished initialization.");
 	}
 
 	@Override
@@ -48,23 +48,23 @@ public class DeutschsAlgorithm extends QuantumAlgorithms {
 		 * The following operations are performed: entangle qubitZero (qubitZero
 		 * |> gateX) |> gateH2 |> f |> gateH2
 		 */
-		log.info("Started running algorithm...");
+		LOGGER.info("Started running algorithm...");
 		resultQubit = QuantumOperations.applyGate(QuantumOperations.applyGate(
-				QuantumOperations.applyGate(
-						QuantumOperations.entangle(QUBIT_0, QuantumOperations.applyGate(QUBIT_0, gateX)), gateHH),
-				oracle), gateHH);
-		log.info("Finished running algorithm.");
+		        QuantumOperations.applyGate(
+		                QuantumOperations.entangle(QUBIT_0, QuantumOperations.applyGate(QUBIT_0, gateX)), gateHH),
+		        oracle), gateHH);
+		LOGGER.info("Finished running algorithm.");
 	}
 
 	@Override
 	public void measure() {
-		log.info("Started measurement process...");
+		LOGGER.info("Started measurement process...");
 		measurementResults = new double[resultQubit.getQubit().length];
 		int i = 0;
 		for (ComplexNumber c : resultQubit.getQubit()) {
 			measurementResults[i++] = Math.round(ComplexMath.multiply(c, ComplexMath.conjugate(c)).getReal());
 		}
-		log.info("Finished measurement process...");
+		LOGGER.info("Finished measurement process...");
 	}
 
 	public boolean isFunctionConstant() {
@@ -72,7 +72,7 @@ public class DeutschsAlgorithm extends QuantumAlgorithms {
 		ComplexNumber[] q01 = QuantumOperations.entangle(QUBIT_0, QUBIT_1).getQubit();
 		for (ComplexNumber c : q01) {
 			if (Double.compare(Math.round(ComplexMath.multiply(c, ComplexMath.conjugate(c)).getReal()),
-					measurementResults[i++]) != 0) {
+			        measurementResults[i++]) != 0) {
 				return false;
 			}
 		}
@@ -85,7 +85,7 @@ public class DeutschsAlgorithm extends QuantumAlgorithms {
 		ComplexNumber[] q01 = QuantumOperations.entangle(QUBIT_1, QUBIT_1).getQubit();
 		for (ComplexNumber c : q01) {
 			if (Double.compare(Math.round(ComplexMath.multiply(c, ComplexMath.conjugate(c)).getReal()),
-					measurementResults[i++]) != 0) {
+			        measurementResults[i++]) != 0) {
 				return false;
 			}
 		}
