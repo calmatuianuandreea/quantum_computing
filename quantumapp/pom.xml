@@ -36,6 +36,16 @@
 			<version>${quantumlib.version}</version>
 		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>quantum_computing-mvn-repo</id>
+			<url>https://raw.github.com/ardeleanasm/quantum_computing/mvn-repo/</url>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>always</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
 	<build>
 		<finalName>QuantumApp</finalName>
 		<plugins>
