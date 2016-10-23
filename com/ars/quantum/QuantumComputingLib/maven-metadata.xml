@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.ars.quantum</groupId>
+  <artifactId>QuantumComputingLib</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20161023090634</lastUpdated>
+  </versioning>
+</metadata>
