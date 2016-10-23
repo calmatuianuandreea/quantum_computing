@@ -15,7 +15,7 @@ import com.ars.qubits.QubitOne;
 import com.ars.qubits.QubitZero;
 
 public class DeutschsAlgorithm extends QuantumAlgorithms {
-	private static final Logger	LOGGER	= LogManager.getLogger(QuantumAlgorithms.class);
+	private static final Logger	LOGGER	= LogManager.getLogger(DeutschsAlgorithm.class);
 	private IGate				gateH;
 	private IGate				gateX;
 	private double[][]			gateHH;
