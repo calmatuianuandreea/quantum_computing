@@ -1,10 +1,10 @@
 package com.ars.quantum.utils;
 
-import java.util.List;
 
 import com.ars.complexnumbers.ComplexMath;
 import com.ars.complexnumbers.ComplexNumber;
 import com.ars.gates.IGate;
+import com.ars.qubits.QRegister;
 import com.ars.qubits.Qubit;
 
 /**
@@ -31,16 +31,16 @@ public class QuantumOperations {
 	 * Perform the tensor product between two or more qubits. Example, for three
 	 * qubits |0>, |0> and |1>, the result will be |001>.
 	 * 
-	 * @param qubitsList list of qubits
+	 * @param quantumRegister 
 	 * @return qubit the tensor product of the two qubits.
 	 */
-	public static Qubit entangle(List<Qubit> qubitsList) {
-		if (qubitsList.size() < 2) {
+	public static Qubit entangle(QRegister quantumRegister) {
+		if (quantumRegister.size() < 2) {
 			return null;
 		}
-		Qubit bufferQubit = qubitsList.get(0);
-		for (int i = 1; i < qubitsList.size(); i++) {
-			bufferQubit = performTensorProduct(bufferQubit, qubitsList.get(i));
+		Qubit bufferQubit = quantumRegister.get(0);
+		for (int i = 1; i < quantumRegister.size(); i++) {
+			bufferQubit = performTensorProduct(bufferQubit, quantumRegister.get(i));
 		}
 		return bufferQubit;
 	}
@@ -48,7 +48,7 @@ public class QuantumOperations {
 	private static Qubit performTensorProduct(Qubit q1, Qubit q2) {
 		int len1 = q1.getQubit().length;
 		int len2 = q2.getQubit().length;
-		ComplexNumber[] complexNumberList = new ComplexNumber[len1 * 2];
+		ComplexNumber[] complexNumberList = new ComplexNumber[len1 * len2];
 		int k = 0;
 		for (int i = 0; i < len1; i++) {
 			for (int j = 0; j < len2; j++) {
@@ -110,6 +110,7 @@ public class QuantumOperations {
 		return apply(q, gate.getUnitaryMatrix());
 	}
 
+	
 	/**
 	 * Apply a specified Gate to a qubit.
 	 * 
@@ -185,6 +186,8 @@ public class QuantumOperations {
 		return result;
 	}
 
+	
+	
 	/**
 	 * Performs the outer product of two qubits |q1><q2|
 	 * 
@@ -221,22 +224,22 @@ public class QuantumOperations {
 	}
 
 	/**
-	 * Performs the outer product of two qubits <q1|q2>
+	 * Performs the inner product of two qubits <q1|q2>
 	 * 
 	 * @param q1 first qubit
 	 * @param q2 second qubit
-	 * @return ComplexNumber the outer product of the two qubits.
+	 * @return ComplexNumber the inner product of the two qubits.
 	 */
 	public static ComplexNumber innerProduct(Qubit q1, Qubit q2) {
 		return calculateInnerProduct(q1.getQubit(), q2.getQubit());
 	}
 	
 	/**
-	 * Performs the outer product of two qubits <q1|q2>
+	 * Performs the inner product of two qubits <q1|q2>
 	 * 
 	 * @param z1 first qubit
 	 * @param z2 second qubit
-	 * @return ComplexNumber the outer product of the two qubits.
+	 * @return ComplexNumber the inner product of the two qubits.
 	 */
 	public static ComplexNumber innerProduct(ComplexNumber[] z1, ComplexNumber[] z2) {
 		return calculateInnerProduct(z1, z2);
