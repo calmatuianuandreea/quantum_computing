@@ -1,10 +1,11 @@
 package com.ars.quantum.utils;
 
 
+import java.util.List;
+
 import com.ars.complexnumbers.ComplexMath;
 import com.ars.complexnumbers.ComplexNumber;
 import com.ars.gates.IGate;
-import com.ars.qubits.QRegister;
 import com.ars.qubits.Qubit;
 
 /**
@@ -34,16 +35,16 @@ public class QuantumOperations {
 	 * @param quantumRegister 
 	 * @return qubit the tensor product of the two qubits.
 	 */
-	public static Qubit entangle(QRegister quantumRegister) {
-		if (quantumRegister.size() < 2) {
-			return null;
-		}
-		Qubit bufferQubit = quantumRegister.get(0);
-		for (int i = 1; i < quantumRegister.size(); i++) {
-			bufferQubit = performTensorProduct(bufferQubit, quantumRegister.get(i));
-		}
-		return bufferQubit;
-	}
+	public static Qubit entangle(List<Qubit> qubitsList) {
+ 		if (qubitsList.size() < 2) {
+   			return null;
+  		}
+ 		Qubit bufferQubit = qubitsList.get(0);
+ 		for (int i = 1; i < qubitsList.size(); i++) {
+ 			bufferQubit = performTensorProduct(bufferQubit, qubitsList.get(i));
+   		}
+  		return bufferQubit;
+  	}
 
 	private static Qubit performTensorProduct(Qubit q1, Qubit q2) {
 		int len1 = q1.getQubit().length;
