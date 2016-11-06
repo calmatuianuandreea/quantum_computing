@@ -1,5 +1,6 @@
 package com.ars.quantum.utils;
 
+import com.ars.quantum.exception.NullValueException;
 import java.util.Arrays;
 
 import com.ars.complexnumbers.ComplexMath;
@@ -39,7 +40,10 @@ public class MatrixOperations {
 				}
 			}
 		}
-		return multiply;
+		if(multiply == null)
+			throw new NullValueException("return value is null for method multiply");
+		else
+			return multiply;
 	}
 
 	/**
@@ -70,7 +74,10 @@ public class MatrixOperations {
 				}
 			}
 		}
-		return multiply;
+		if(multiply == null)
+			throw new NullValueException("return value is null for method multiply");
+		else
+			return multiply;
 	}
 
 	/**
@@ -93,7 +100,10 @@ public class MatrixOperations {
 			}
 		}
 
-		return result;
+		if(result == null)
+			throw new NullValueException("return value is null for method add");
+		else
+			return result;
 	}
 
 	/**
@@ -116,7 +126,10 @@ public class MatrixOperations {
 			}
 		}
 
-		return result;
+		if(result == null)
+			throw new NullValueException("return value is null for method add");
+		else
+			return result;
 	}
 
 	/**
@@ -139,7 +152,10 @@ public class MatrixOperations {
 			}
 		}
 
-		return result;
+		if(result == null)
+			throw new NullValueException("return value is null for method substract");
+		else
+			return result;
 	}
 
 	/**
@@ -162,7 +178,10 @@ public class MatrixOperations {
 			}
 		}
 
-		return result;
+		if(result == null)
+			throw new NullValueException("return value is null for method add");
+		else
+			return result;
 	}
 
 	/**
@@ -224,7 +243,10 @@ public class MatrixOperations {
 			}
 		}
 
-		return result;
+		if(result == null)
+			throw new NullValueException("return value is null for method performMultiplicationWithConstant");
+		else
+			return result;
 	}
 
 	/**
@@ -252,7 +274,11 @@ public class MatrixOperations {
 			}
 			k += 2;
 		}
-		return result;
+		
+		if(result == null)
+			throw new NullValueException("return value is null for method tensorProduct");
+		else
+			return result;
 	}
 
 	/**
@@ -282,7 +308,11 @@ public class MatrixOperations {
 			}
 			k += 2;
 		}
-		return result;
+		
+		if(result == null)
+			throw new NullValueException("return value is null for method tensorProduct");
+		else
+			return result;
 	}
 
 	private static ComplexNumber[][] performMultiplicationWithConstant(ComplexNumber[][] a, ComplexNumber ct,
@@ -297,7 +327,10 @@ public class MatrixOperations {
 			}
 		}
 
-		return result;
+		if(result == null)
+			throw new NullValueException("return value is null for method performMultiplicationWithConstant");
+		else
+			return result;
 	}
 
 
@@ -319,7 +352,11 @@ public class MatrixOperations {
 
 			}
 		}
-		return identityMatrix;
+		
+		if(identityMatrix == null)
+			throw new NullValueException("return value is null for method generateIdentityMatrix");
+		else
+			return identityMatrix;
 	}
 	
 	/**
@@ -337,6 +374,10 @@ public class MatrixOperations {
 				resultMatrix[i][j]=ComplexMath.multiply(a[i][j], ct);
 			}
 		}
-		return resultMatrix;
+		
+		if(resultMatrix == null)
+			throw new NullValueException("return value is null for method multiplyByConstant");
+		else
+			return resultMatrix;
 	}
 }

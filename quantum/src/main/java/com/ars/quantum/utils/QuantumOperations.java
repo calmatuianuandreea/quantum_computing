@@ -1,6 +1,6 @@
 package com.ars.quantum.utils;
 
-
+import com.ars.quantum.exception.NullValueException;
 import java.util.List;
 
 import com.ars.complexnumbers.ComplexMath;
@@ -43,7 +43,11 @@ public class QuantumOperations {
  		for (int i = 1; i < qubitsList.size(); i++) {
  			bufferQubit = performTensorProduct(bufferQubit, qubitsList.get(i));
    		}
-  		return bufferQubit;
+ 		
+ 		if(bufferQubit == null)
+ 			throw new NullValueException("returned value is null for method entangle");
+ 		else
+ 			return bufferQubit;
   	}
 
 	private static Qubit performTensorProduct(Qubit q1, Qubit q2) {
@@ -76,8 +80,11 @@ public class QuantumOperations {
 			complexNumberList[i] = sum;
 		}
 		q0 = new Qubit(complexNumberList);
-		return q0;
 
+		if(q0 == null)
+			throw new NullValueException("returned value is null for method apply");
+		else
+			return q0;
 	}
 	
 	private static Qubit apply(Qubit q, ComplexNumber[][] gate) {
@@ -96,7 +103,11 @@ public class QuantumOperations {
 			complexNumberList[i] = sum;
 		}
 		q0 = new Qubit(complexNumberList);
-		return q0;
+		
+		if(q0 == null)
+			throw new NullValueException("returned value is null for method apply");
+		else
+			return q0;
 
 	}
 
@@ -141,7 +152,10 @@ public class QuantumOperations {
 			transpose[0][i] = z[i];
 		}
 
-		return transpose;
+		if(transpose == null)
+			throw new NullValueException("returned value is null for method calculateTranspose");
+		else
+			return transpose;
 	}
 
 	/**
@@ -184,7 +198,11 @@ public class QuantumOperations {
 				}
 			}
 		}
-		return result;
+		
+		if(result == null)
+			throw new NullValueException("returned value is null for method calculateOuterProduct");
+		else
+			return result;
 	}
 
 	
@@ -221,7 +239,11 @@ public class QuantumOperations {
 				result = ComplexMath.add(result, ComplexMath.multiply(transposeFirstArray[0][i], z2[i]));
 			}
 		}
-		return result;
+		
+		if(result == null)
+			throw new NullValueException("returned value is null for method calculateInnerProduct");
+		else
+			return result;
 	}
 
 	/**

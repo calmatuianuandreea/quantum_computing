@@ -1,5 +1,6 @@
 package com.ars.quantum.utils;
 
+import com.ars.quantum.exception.NullValueException;
 import static org.junit.Assert.*;
 
 
@@ -19,7 +20,7 @@ public class MatrixOperationsTest {
 	public void tearDown() throws Exception {
 	}
 
-	@Test
+	@Test(expected=NullValueException.class)
 	public void testMatrixAddDoublesDifferentLengths() {
 		double[][] a=new double[2][2];
 		double[][] b=new double[3][3];
@@ -27,7 +28,7 @@ public class MatrixOperationsTest {
 		assertNull(c);
 	}
 	
-	@Test
+	@Test(expected=NullValueException.class)
 	public void testMatrixAddComplexDifferentLengths() {
 		ComplexNumber[][] a=new ComplexNumber[2][2];
 		ComplexNumber[][] b=new ComplexNumber[3][3];
@@ -59,7 +60,7 @@ public class MatrixOperationsTest {
 		}
 	}
 	
-	@Test
+	@Test(expected=NullValueException.class)
 	public void testMatrixSubtractDoublesDifferentLengths() {
 		double[][] a=new double[2][2];
 		double[][] b=new double[3][3];
@@ -67,7 +68,7 @@ public class MatrixOperationsTest {
 		assertNull(c);
 	}
 	
-	@Test
+	@Test(expected=NullValueException.class)
 	public void testMatrixSubtractComplexDifferentLengths() {
 		ComplexNumber[][] a=new ComplexNumber[2][2];
 		ComplexNumber[][] b=new ComplexNumber[3][3];
@@ -141,7 +142,7 @@ public class MatrixOperationsTest {
 		assertEquals(false, MatrixOperations.areEqual(a, b));
 	}
 	
-	@Test
+	@Test(expected=NullValueException.class)
 	public void testMatrixMultiplyDoubleDifferentSizes(){
 		double[][] a=new double[2][2];
 		double[][] b=new double[3][3];
@@ -161,7 +162,7 @@ public class MatrixOperationsTest {
 		}
 	}
 	
-	@Test
+	@Test(expected=NullValueException.class)
 	public void testMatrixMultiplyComplexDifferentSizes(){
 		ComplexNumber[][] a=new ComplexNumber[2][2];
 		ComplexNumber[][] b=new ComplexNumber[3][3];
