@@ -32,6 +32,21 @@ public class QuantumOperations {
 	 * Perform the tensor product between two or more qubits. Example, for three
 	 * qubits |0>, |0> and |1>, the result will be |001>.
 	 * 
+	 * @param Variable number of qubits 
+	 * @return qubit the tensor product of the two qubits.
+	 */
+	public static Qubit entangle(Qubit...qubits){
+		Qubit bufferQubit=qubits[0];
+		for(int i=0;i<qubits.length;i++){
+			bufferQubit = performTensorProduct(bufferQubit, qubits[i]);
+		}
+		return bufferQubit;
+	}
+	
+	/**
+	 * Perform the tensor product between two or more qubits. Example, for three
+	 * qubits |0>, |0> and |1>, the result will be |001>.
+	 * 
 	 * @param quantumRegister 
 	 * @return qubit the tensor product of the two qubits.
 	 */
