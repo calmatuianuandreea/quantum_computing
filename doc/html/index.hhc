@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="CONTRIBUTING"><param name="Local" value="md__c_o_n_t_r_i_b_u_t_i_n_g.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="README"><param name="Local" value="md__r_e_a_d_m_e.html"><param name="ImageNumber" value="11"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Classes"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class List"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ars"><param name="ImageNumber" value="1"></OBJECT>
+        <UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="algorithms"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="deutsch"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="DeutschsAlgorithm"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="DeutschsAlgorithm"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a25599a3eb05e6bbf425692a3352462f6"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="DeutschsAlgorithm"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a2908de89b7f76d8160272af477a1dc42"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="init"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a01537777ec24738faf83660313759ea4"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="isFunctionBalanced"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#ad0d426fd3aa5441adb8892d9ccbe9705"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="isFunctionConstant"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a853d89cbac22f31c9b0fd24e53c3930d"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="measure"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a205c99180da5c481f6733d07759de636"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="run"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#afb9f22b5a65a36c5a2828e7f06e4563e"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="grover"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="GroversAlgorithm"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="GroversAlgorithm"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#acd86694e5d961a9e964a5dc439677738"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="close"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#a0df6e611d65aed02934b95df8414fac0"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="createOracleMatrix"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#aaba2e3f570bd14cf35d8f81a0046075f"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="init"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#ae2825f36c10e6c822aef9da35992bef3"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="measure"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#a8b5729e4882c27f2c4879bd2c7b6d17d"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="run"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#a4b7b6a2e63a64325769a5ebeffb90ea9"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="MeasurementPerformer"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_measurement_performer.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="MeasurementPerformer"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_measurement_performer.html#a5f0477b1d710b377fe950a11e188316a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="configure"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_measurement_performer.html#a2859e53e337d327fe64711724ef46175"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="measure"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_measurement_performer.html#aaa613379c40e0b083f5ce81e6ba59f72"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="QuantumAlgorithms"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QuantumAlgorithms"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#a55a8e679534f3f4e5629504d4eae8fc9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QuantumAlgorithms"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#a1ec69e5ec9aa5a35743950c4d4e50f62"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="init"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#ae2f995342974067844f8cf671e156269"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="measure"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#afcae7e993d2d70942a7ffd6485c44b1e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="run"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#ae36bd570c176a3f11b6a3ef666d49a9d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setOracle"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#a71cfe9109e3a0ff9c2b7e5d4cc16c4d8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="gateFactory"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#a4a69f924d80667c1a262ef0c150c0a02"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="oracle"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#a1dee0d926787964b9c8d3daa6355dc70"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="resultQubit"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html#ad04f21f877bc7d662c857a31ff07b65b"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="complexnumbers"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ComplexMath"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ComplexMathTest"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setUp"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a038ac671e0502ed2448f4649da993131"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="tearDown"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#aa0a4283d8c92cfd428208a61fb0b2753"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testAdd"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a820df886e3c20f3cbe36ff6905e1d67e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testAddConstant"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a0dba8a864962376e684cfcbc1baa80f4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testConjugate"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a29817014ba09b1d2f985882ddfcbfae2"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testCosine"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a453b6e66b0570b74892caa9ec83c47cb"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testDivide"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a8ddaa1e32717e2b18f6c64010c688b6d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testDivisionConstant"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a7250df204110c40becd58a0886ec8e7c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testExp"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#abd1ea731d0875c3351306079e4694c24"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testGetArg"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a2102465aa80b8303b2de77a3e87ffea9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testInverse"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a2c47b64252c4ecbe00d38fe89e66a9bb"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testMod"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#af1b3b844bab2323d1bd4bb07712f7652"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testMultiply"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a195e4c9c2b94ada809ff5ca462a9dc06"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testMultiplyConstant"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a118231be2a26c23d165d3b40093352ac"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testPow"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a70af211131478c43b06210fe524d3bd7"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testSine"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#ab429903cc819ea2c83369e07ba2f49e9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testSquare"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a43dc686fe2b96e097f3ee8095fef12c1"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testSubtract"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a79e2b206d48588b1e7db17a681a405eb"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testSubtractConstant"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a535b2562407e9de2c6aea700d5e1a0f8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testTan"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#abcec8968bf43093a912ba2c24f4718a9"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ComplexNumber"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ComplexNumber"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a8798b32c39932a90436b5ef1d8bd83a4"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="ComplexNumber"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a5c911c206c51fe7c3558e32147d22d12"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="equals"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a8dd0d197e07c92cb3f7e98697a18d96f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getArg"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a7cbe3a7d9d1e409b2c00cfd34e95b3e8"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getImaginary"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a611fa4712cc691cf1e13e91f182c1850"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getReal"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a4cb4de35836a0ca818d3f2ce2df07736"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="set"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#ac93a6120b2d6576dac75c256f0cd667f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setImaginary"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a728d224cd650d2e5ab62acd3159a4989"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setReal"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#ae13ab597ac2208a3915398ee075a7b69"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="toString"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#ab55fe26ece82d837fc4db3ab88577aa0"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="gates"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="CNotGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_c_not_gate.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getUnitaryMatrix"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_c_not_gate.html#a3a78f3ef3d7a418a51b3fabc46954ec5"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="EGateTypes"><param name="Local" value="enumcom_1_1ars_1_1gates_1_1_e_gate_types.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="E_CNotGate"><param name="Local" value="enumcom_1_1ars_1_1gates_1_1_e_gate_types.html#a921ebe3d6405141a79ae014d94445d48"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="E_HadamardGate"><param name="Local" value="enumcom_1_1ars_1_1gates_1_1_e_gate_types.html#abeb9ade3d4c04006200df8d2df685e67"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="E_XGate"><param name="Local" value="enumcom_1_1ars_1_1gates_1_1_e_gate_types.html#a4a07af93612467257717239122a1c03a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="E_ZGate"><param name="Local" value="enumcom_1_1ars_1_1gates_1_1_e_gate_types.html#ae9bf7c54ade9d79260e750bda4aec249"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="GateFactory"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gate_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gate_factory.html#a3a60759187c2a81cd1fec2ac7d3c847c"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="GateProducer"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gate_producer.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="GatesAbstractFactory"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gates_abstract_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gates_abstract_factory.html#a06a4a9da0a9fc741f70ce28b74156cab"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="HGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_h_gate.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getUnitaryMatrix"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_h_gate.html#a4749feb03fafcda241d9f854ef43a0d9"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="IGate"><param name="Local" value="interfacecom_1_1ars_1_1gates_1_1_i_gate.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getUnitaryMatrix"><param name="Local" value="interfacecom_1_1ars_1_1gates_1_1_i_gate.html#a6a940b3a6940cd97429aa211143121cb"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="QuantumGatesTest"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setUp"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html#ac6bd719c947a40468a9f5fc8e7861739"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="tearDown"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html#a9709dfe4377b2459777e814a52d8a591"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testCNotGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html#a9b3279f116ab4884f992562072132783"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testHGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html#a92187d5f38a054492896c3fe55ca6de3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testXGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html#a38b64a39ed314a921858b2b11bfd9b6f"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testZGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html#a3149a4e2edd55f7e92974d014ec94484"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="XGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_x_gate.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getUnitaryMatrix"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_x_gate.html#aa0e495ad8fa7fd0e23ecea6f01c02f6e"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="ZGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_z_gate.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getUnitaryMatrix"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_z_gate.html#a1009d3144a50f50332e64b6e7f37b578"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="quantum"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="exception"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="NullValueException"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1exception_1_1_null_value_exception.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="NullValueException"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1exception_1_1_null_value_exception.html#acd710836750edd32f0d8406aa26818b8"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="utils"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="MatrixOperations"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="MatrixOperationsTest"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="setUp"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a10e65a668d518544cd556193de505348"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="tearDown"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a4c7ef10675db9e4cf278ef3d4c88dc75"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testGenerateIdentityMatrix"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a97c53b085b9edf71d4b9488f19b6ba40"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixAddComplex"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aad67e722c86ac9893a746e586e76e6c6"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixAddComplexDifferentLengths"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a6a11674dd3048492205cfcbd810650a4"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixAddDouble"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a9dd0cf555f9f6a02e67c400bd2ef6e8b"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixAddDoublesDifferentLengths"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a95be19fcaf80e4fa48732d3a03c55afc"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixComplexAreEqual"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a1f520804726b4695d38491efb081a62f"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixComplexAreNotEqual"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a510001ff5f110f317a003aad024b7814"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixComplexDifferentSizes"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a2067fc7495133c6604494ae61c0b21f5"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixDoubleAreEqual"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a8cc1964185da3b73b5a1f4f38f0bb25d"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixDoubleAreNotEqual"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#ae47b404462da670081830dded82d3252"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixDoubleDifferentSizes"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a2263b15fae56de8579bc572cd67a5db2"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixMultiplyComplex"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aa87b6e37af0eb7ae67984f35548d64dc"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixMultiplyComplexDifferentSizes"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a9ee4aca46fc14b35d2f779747e609239"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixMultiplyDouble"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a32f8097861b74ba4b4ee3d601fcba520"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixMultiplyDoubleDifferentSizes"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aabeb9f046a3146998afea51488839af6"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixSubtractComplex"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a7b8069b3de70b2eb9d655eb142002d0b"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixSubtractComplexDifferentLengths"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#af0c58a11a8b195509365a0f786041c86"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixSubtractDouble"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a531e80f804f35d3f8fd8d35eab4b4faa"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMatrixSubtractDoublesDifferentLengths"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a5ea063677df577695471228de2a4b6bf"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testMultiplyByConstant"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a523958e57a1bc8ad1ca05c15cfbaa4d5"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testTensorProduct"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a531c3daf0534ee2d2776e648f0476ae5"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testTensorProductComplex"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#ad96b1789d5fc5c530d9e6e64c9b8f374"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QuantumOperations"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              </UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QuantumOperationsTest"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html"><param name="ImageNumber" value="1"></OBJECT>
+              <UL>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="setUp"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a8f96706026f3d321f59725f30fdb0b5e"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="tearDown"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a3875eec94e51a4e5ee40a21beb171fe8"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testApplyXGate"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#ad217b97170aecd9c9c5f5aa907ea60f2"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testApplyXGateWithMatrixParameter"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#ae1c0eac5931019d8d1cbd48abc8adade"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testCalculateOuterProduct"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a7a1cf1c6b0b84064cea27c39c870e470"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testEntangleWithThreeQubitsAllCombinations"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a71ffaf6b899b2a1586f7da357e0517ba"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testEntangleWithTwoQubitsAllCombinations"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#afc5716dca716e29a0cdbcfe069a815a3"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testInnerProduct"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a88f7c027a6f692b9fa2e5e89f18b4a3d"><param name="ImageNumber" value="11"></OBJECT>
+              <LI><OBJECT type="text/sitemap"><param name="Name" value="testTranspose"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a09270ff6a4f9ed716f38d2a911495e4a"><param name="ImageNumber" value="11"></OBJECT>
+              </UL>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="AllTests"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1_all_tests.html"><param name="ImageNumber" value="11"></OBJECT>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="quantumapp"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="App"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_app.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="AppTest"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_app_test.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="AppTest"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_app_test.html#ad1892904405d218e652b29e79de2de1d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testApp"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_app_test.html#a37866d2d52dc17cbba459bb947972bdd"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="DeutschRunner"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_deutsch_runner.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="run"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_deutsch_runner.html#a8dbef89cef296d4bb392f303e7c7ed85"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="GroverRunner"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_grover_runner.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="run"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_grover_runner.html#a2524c67bd5ad4b1a33d613a4c12be738"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        <LI><OBJECT type="text/sitemap"><param name="Name" value="qubits"><param name="ImageNumber" value="1"></OBJECT>
+          <UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="Qubit"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Qubit"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#a53faaab4aa29083881b330e7f1b14f7e"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="Qubit"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#a7dfa895c2fc65d9b8eb535e8161c2bb7"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="equals"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#a2070492aa6a39ee06855fdd94566e4d3"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="getQubit"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#a48b2de0bf6b0efc8470d687a239085db"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="hashCode"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#acc34d826407f3aba4d09c3073d9d7270"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="isValid"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#acd0c96f4ba85205af1647a7f0e2c404a"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="toString"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#abd0f4fc61885920dd3c7dde9c968a543"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="qubitVector"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html#a1ba51c0cf0e774695ef15d630a5060ed"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitMinus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_minus.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitMinus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_minus.html#a6c5a09c7016467c22e2f7bdb741051b4"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitOne"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_one.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitOne"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_one.html#a22be10817ff693defa00a6bc293cf322"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitPlus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_plus.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitPlus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_plus.html#a094f90aed7126ad716207496299e08dc"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitTest"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="setUp"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#ae68c939221768214df5fb417ef7cf766"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="tearDown"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#ade4c555dfc00afb0bf8f8580af8647c9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testConstructorQubitVector"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#a47f5f10c10403984398612a0ea940099"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testEqualQubits"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#a260e01e74869bf75442e06872921b91c"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testEqualsDifferendQubits"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#abd3fa46c0aaee3c5c2e617d61e3f8d30"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testEqualsDifferentLengthQubits"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#a709c83a9267630746e57b0903ad53c41"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testNotEqual"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#a399fda391bd4201af1d625d3beb8e1fd"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testQubitMinus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#a911234a4c70ada90102877f163e3b973"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testQubitOne"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#a2719401cc0f28a3c9676337dca71118d"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testQubitPlus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#a389dff5ee932a806b76703b63b60e3d9"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testQubitZero"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#afd0454df241a37488becb51d06c76f25"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testToStringMethod"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#ae19a6ea1a98159a12bb718310869ff39"><param name="ImageNumber" value="11"></OBJECT>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="testValid"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html#add210bf06395e140f80609f097df4a2c"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitZero"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_zero.html"><param name="ImageNumber" value="1"></OBJECT>
+            <UL>
+            <LI><OBJECT type="text/sitemap"><param name="Name" value="QubitZero"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_zero.html#a5844c1d4ff5a450e411f8e570b98b4af"><param name="ImageNumber" value="11"></OBJECT>
+            </UL>
+          </UL>
+        </UL>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Index"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Hierarchy"><param name="Local" value="hierarchy.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantum.AllTests"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1_all_tests.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantumapp.App"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_app.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.complexnumbers.ComplexMath"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.complexnumbers.ComplexMathTest"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.complexnumbers.ComplexNumber"><param name="Local" value="classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.EGateTypes"><param name="Local" value="enumcom_1_1ars_1_1gates_1_1_e_gate_types.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.GateProducer"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gate_producer.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.GatesAbstractFactory"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gates_abstract_factory.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.GateFactory"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_gate_factory.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.IGate"><param name="Local" value="interfacecom_1_1ars_1_1gates_1_1_i_gate.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.CNotGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_c_not_gate.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.HGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_h_gate.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.XGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_x_gate.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.ZGate"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_z_gate.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantum.utils.MatrixOperations"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantum.utils.MatrixOperationsTest"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.algorithms.MeasurementPerformer"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_measurement_performer.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="NullPointerException"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantum.exception.NullValueException"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1exception_1_1_null_value_exception.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.algorithms.QuantumAlgorithms"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.algorithms.deutsch.DeutschsAlgorithm"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.algorithms.grover.GroversAlgorithm"><param name="Local" value="classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.gates.QuantumGatesTest"><param name="Local" value="classcom_1_1ars_1_1gates_1_1_quantum_gates_test.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantum.utils.QuantumOperations"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantum.utils.QuantumOperationsTest"><param name="Local" value="classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.qubits.Qubit"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.qubits.QubitMinus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_minus.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.qubits.QubitOne"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_one.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.qubits.QubitPlus"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_plus.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.qubits.QubitZero"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_zero.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.qubits.QubitTest"><param name="Local" value="classcom_1_1ars_1_1qubits_1_1_qubit_test.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Runnable"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantumapp.DeutschRunner"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_deutsch_runner.html"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantumapp.GroverRunner"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_grover_runner.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TestCase"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="com.ars.quantumapp.AppTest"><param name="Local" value="classcom_1_1ars_1_1quantumapp_1_1_app_test.html"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="Class Members"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="All"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Functions"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Variables"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>
