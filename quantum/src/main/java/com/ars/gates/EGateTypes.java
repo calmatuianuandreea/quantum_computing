@@ -27,10 +27,12 @@ public enum EGateTypes {
 	 * CNOT Gate
 	 */
 	E_CNotGate,
-	
 	/*
-	 * Wiggke Gate
+	 * Wiggle Gate
 	 */
-	E_WiggleGate
-	
+	E_WiggleGate,
+	/*
+	 * Symmetric Phase Shift Gate
+	 */
+	E_SymmetricPhaseShift
 }

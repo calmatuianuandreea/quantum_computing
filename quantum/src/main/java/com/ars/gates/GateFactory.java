@@ -30,6 +30,8 @@ public class GateFactory extends GatesAbstractFactory {
 		case E_WiggleGate:
 			gate = new WiggleGate();
 			break;
+		case E_SymmetricPhaseShift:
+			gate = new SymmetricPhaseShift();
 		}
 		return gate;
 	}
