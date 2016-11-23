@@ -1,0 +1,78 @@
+.TH "com.ars.algorithms.QuantumAlgorithms" 3 "Wed Nov 23 2016" "quantum - computing" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.ars.algorithms.QuantumAlgorithms \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.ars\&.algorithms\&.deutsch\&.DeutschsAlgorithm\fP, \fBcom\&.ars\&.algorithms\&.grover\&.GroversAlgorithm\fP, and \fBcom\&.ars\&.quantumapp\&.HalfAdderCell\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQuantumAlgorithms\fP ()"
+.br
+.ti -1c
+.RI "\fBQuantumAlgorithms\fP (double[][] \fBoracle\fP)"
+.br
+.ti -1c
+.RI "void \fBsetOracle\fP (double[][] \fBoracle\fP)"
+.br
+.ti -1c
+.RI "abstract void \fBinit\fP ()"
+.br
+.ti -1c
+.RI "abstract void \fBrun\fP ()"
+.br
+.ti -1c
+.RI "abstract void \fBmeasure\fP ()"
+.br
+.ti -1c
+.RI "Logger \fBgetLogger\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "double [][] \fBoracle\fP"
+.br
+.ti -1c
+.RI "\fBQubit\fP \fBresultQubit\fP"
+.br
+.ti -1c
+.RI "\fBGatesAbstractFactory\fP \fBgateFactory\fP = \fBGateProducer\&.getGateFactory\fP()"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.ars\&.algorithms\&.QuantumAlgorithms\&.QuantumAlgorithms ()"
+
+.SS "com\&.ars\&.algorithms\&.QuantumAlgorithms\&.QuantumAlgorithms (double oracle[][])"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "Logger com\&.ars\&.algorithms\&.QuantumAlgorithms\&.getLogger ()"
+
+.SS "abstract void com\&.ars\&.algorithms\&.QuantumAlgorithms\&.init ()\fC [abstract]\fP"
+
+.SS "abstract void com\&.ars\&.algorithms\&.QuantumAlgorithms\&.measure ()\fC [abstract]\fP"
+
+.SS "abstract void com\&.ars\&.algorithms\&.QuantumAlgorithms\&.run ()\fC [abstract]\fP"
+
+.SS "void com\&.ars\&.algorithms\&.QuantumAlgorithms\&.setOracle (double oracle[][])"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBGatesAbstractFactory\fP com\&.ars\&.algorithms\&.QuantumAlgorithms\&.gateFactory = \fBGateProducer\&.getGateFactory\fP()\fC [protected]\fP"
+
+.SS "double [][] com\&.ars\&.algorithms\&.QuantumAlgorithms\&.oracle\fC [protected]\fP"
+
+.SS "\fBQubit\fP com\&.ars\&.algorithms\&.QuantumAlgorithms\&.resultQubit\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for quantum - computing from the source code\&.

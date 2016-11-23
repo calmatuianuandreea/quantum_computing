@@ -5,7 +5,7 @@ public class App {
 	private static Thread runner;
 
 	public static void main(String[] args) {
-		 runner=new Thread(new GroverRunner());
+		 runner=new Thread(new HalfAdderCellRunner());
 		 runner.start();
 		
 	}

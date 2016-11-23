@@ -1,0 +1,19 @@
+<map id="com.ars.complexnumbers.ComplexMath.conjugate" name="com.ars.complexnumbers.ComplexMath.conjugate">
+<area shape="rect" id="node2" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a390a771ed2ef544949621be5375c806a" title="com.ars.complexnumbers.Complex\lMath.divide" alt="" coords="292,152,519,193"/>
+<area shape="rect" id="node9" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a29817014ba09b1d2f985882ddfcbfae2" title="com.ars.complexnumbers.Complex\lMathTest.testConjugate" alt="" coords="292,217,519,259"/>
+<area shape="rect" id="node10" href="$classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a205c99180da5c481f6733d07759de636" title="com.ars.algorithms.deutsch.\lDeutschsAlgorithm.measure" alt="" coords="312,283,499,324"/>
+<area shape="rect" id="node11" href="$classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a853d89cbac22f31c9b0fd24e53c3930d" title="com.ars.algorithms.deutsch.\lDeutschsAlgorithm.isFunctionConstant" alt="" coords="281,348,529,389"/>
+<area shape="rect" id="node12" href="$classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#ad0d426fd3aa5441adb8892d9ccbe9705" title="com.ars.algorithms.deutsch.\lDeutschsAlgorithm.isFunctionBalanced" alt="" coords="280,413,531,455"/>
+<area shape="rect" id="node13" href="$classcom_1_1ars_1_1algorithms_1_1_measurement_performer.html#aaa613379c40e0b083f5ce81e6ba59f72" title="com.ars.algorithms.Measurement\lPerformer.measure" alt="" coords="297,479,513,520"/>
+<area shape="rect" id="node3" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#af260af539eaec79d57b7e5363bda686e" title="com.ars.complexnumbers.Complex\lMath.tan" alt="" coords="579,5,805,47"/>
+<area shape="rect" id="node4" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#abcec8968bf43093a912ba2c24f4718a9" title="com.ars.complexnumbers.Complex\lMathTest.testTan" alt="" coords="853,35,1080,76"/>
+<area shape="rect" id="node5" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a06897e69e7c59bf707851f4a502d11b8" title="com.ars.complexnumbers.Complex\lMath.inverse" alt="" coords="579,123,805,164"/>
+<area shape="rect" id="node6" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a2c47b64252c4ecbe00d38fe89e66a9bb" title="com.ars.complexnumbers.Complex\lMathTest.testInverse" alt="" coords="853,152,1080,193"/>
+<area shape="rect" id="node7" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a8ddaa1e32717e2b18f6c64010c688b6d" title="com.ars.complexnumbers.Complex\lMathTest.testDivide" alt="" coords="579,240,805,281"/>
+<area shape="rect" id="node8" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math_test.html#a7250df204110c40becd58a0886ec8e7c" title="com.ars.complexnumbers.Complex\lMathTest.testDivisionConstant" alt="" coords="579,305,805,347"/>
+<area shape="rect" id="node14" href="$classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#a8b5729e4882c27f2c4879bd2c7b6d17d" title="com.ars.algorithms.grover.\lGroversAlgorithm.measure" alt="" coords="605,413,779,455"/>
+<area shape="rect" id="node16" href="$classcom_1_1ars_1_1quantumapp_1_1_half_adder_cell.html#a534b92e8e8fd9cbc2538a4e86311b3aa" title="com.ars.quantumapp.HalfAdder\lCell.measure" alt="" coords="590,479,794,520"/>
+<area shape="rect" id="node18" href="$classcom_1_1ars_1_1quantumapp_1_1_half_adder_cell2.html#ace7018ecff35605ac317049d2584db13" title="com.ars.quantumapp.HalfAdder\lCell2.measure" alt="" coords="590,544,794,585"/>
+<area shape="rect" id="node15" href="$classcom_1_1ars_1_1quantumapp_1_1_grover_runner.html#a2524c67bd5ad4b1a33d613a4c12be738" title="com.ars.quantumapp.Grover\lRunner.run" alt="" coords="874,413,1059,455"/>
+<area shape="rect" id="node17" href="$classcom_1_1ars_1_1quantumapp_1_1_half_adder_cell_runner.html#a4f4ba989df2058187640a1868856c0c7" title="com.ars.quantumapp.HalfAdder\lCellRunner.run" alt="" coords="865,479,1069,520"/>
+</map>

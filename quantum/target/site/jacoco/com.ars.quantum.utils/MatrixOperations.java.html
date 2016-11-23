@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatrixOperations.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">QuantumComputingLib</a> &gt; <a href="index.source.html" class="el_package">com.ars.quantum.utils</a> &gt; <span class="el_source">MatrixOperations.java</span></div><h1>MatrixOperations.java</h1><pre class="source lang-java linenums">package com.ars.quantum.utils;
+
+import java.util.Arrays;
+
+import com.ars.complexnumbers.ComplexMath;
+import com.ars.complexnumbers.ComplexNumber;
+
+/**
+ * Implementations of basic operations with 2D arrays
+ * 
+ *
+ */
+<span class="nc" id="L13">public class MatrixOperations {</span>
+
+	/**
+	 * Performs the multiplication between 2 2D arrays of double
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of double
+	 */
+	public static double[][] multiply(double[][] a, double[][] b) {
+<span class="fc" id="L23">		int numberOfRows = a.length;</span>
+<span class="fc" id="L24">		int numberOfColls = a[0].length;</span>
+<span class="fc" id="L25">		int numberOfRowsSecondMatrix = b.length;</span>
+<span class="fc" id="L26">		int numberOfCollsSecondMatrix = b[0].length;</span>
+<span class="fc" id="L27">		double sum = 0.0;</span>
+<span class="fc" id="L28">		double[][] multiply = null;</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">		if (numberOfColls == numberOfRowsSecondMatrix) {</span>
+<span class="fc" id="L30">			multiply = new double[numberOfRows][numberOfCollsSecondMatrix];</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">			for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">				for (int j = 0; j &lt; numberOfCollsSecondMatrix; j++) {</span>
+<span class="fc bfc" id="L33" title="All 2 branches covered.">					for (int k = 0; k &lt; numberOfRowsSecondMatrix; k++) {</span>
+<span class="fc" id="L34">						sum = sum + a[i][k] * b[k][j];</span>
+					}
+
+<span class="fc" id="L37">					multiply[i][j] = sum;</span>
+<span class="fc" id="L38">					sum = 0;</span>
+				}
+			}
+		}
+<span class="fc" id="L42">		return multiply;</span>
+	}
+
+	/**
+	 * Performs the multiplication between 2 2D arrays of complex numbers
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of complex numbers
+	 */
+	public static ComplexNumber[][] multiply(ComplexNumber[][] a, ComplexNumber[][] b) {
+<span class="fc" id="L53">		int numberOfRows = a.length;</span>
+<span class="fc" id="L54">		int numberOfColls = a[0].length;</span>
+<span class="fc" id="L55">		int numberOfRowsSecondMatrix = b.length;</span>
+<span class="fc" id="L56">		int numberOfCollsSecondMatrix = b[0].length;</span>
+<span class="fc" id="L57">		ComplexNumber sum = new ComplexNumber();</span>
+<span class="fc" id="L58">		ComplexNumber[][] multiply = null;</span>
+<span class="fc bfc" id="L59" title="All 2 branches covered.">		if (numberOfColls == numberOfRowsSecondMatrix) {</span>
+<span class="fc" id="L60">			multiply = new ComplexNumber[numberOfRows][numberOfCollsSecondMatrix];</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">			for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L62" title="All 2 branches covered.">				for (int j = 0; j &lt; numberOfCollsSecondMatrix; j++) {</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">					for (int k = 0; k &lt; numberOfRowsSecondMatrix; k++) {</span>
+<span class="fc" id="L64">						sum = ComplexMath.add(sum, ComplexMath.multiply(a[i][k], b[k][j]));</span>
+
+					}
+
+<span class="fc" id="L68">					multiply[i][j] = sum;</span>
+<span class="fc" id="L69">					sum = new ComplexNumber();</span>
+				}
+			}
+		}
+<span class="fc" id="L73">		return multiply;</span>
+	}
+
+	/**
+	 * Performs the sum between 2 2D arrays of double
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of double
+	 */
+	public static double[][] add(double[][] a, double[][] b) {
+<span class="fc" id="L84">		double[][] result = null;</span>
+<span class="fc" id="L85">		int numberOfRows = a.length;</span>
+<span class="fc" id="L86">		int numberOfColls = a[0].length;</span>
+<span class="pc bpc" id="L87" title="1 of 4 branches missed.">		if (a[0].length == b[0].length &amp;&amp; a.length == b.length) {</span>
+<span class="fc" id="L88">			result = new double[numberOfRows][a.length];</span>
+<span class="fc bfc" id="L89" title="All 2 branches covered.">			for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L90" title="All 2 branches covered.">				for (int j = 0; j &lt; numberOfColls; j++) {</span>
+<span class="fc" id="L91">					result[i][j] = a[i][j] + b[i][j];</span>
+				}
+			}
+		}
+
+<span class="fc" id="L96">		return result;</span>
+	}
+
+	/**
+	 * Performs the sum between 2 2D arrays of complex numbers
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of complex numbers
+	 */
+	public static ComplexNumber[][] add(ComplexNumber[][] a, ComplexNumber[][] b) {
+<span class="fc" id="L107">		ComplexNumber[][] result = null;</span>
+<span class="fc" id="L108">		int numberOfRows = a.length;</span>
+<span class="fc" id="L109">		int numberOfColls = a[0].length;</span>
+<span class="pc bpc" id="L110" title="1 of 4 branches missed.">		if (a[0].length == b[0].length &amp;&amp; a.length == b.length) {</span>
+<span class="fc" id="L111">			result = new ComplexNumber[numberOfRows][numberOfColls];</span>
+<span class="fc bfc" id="L112" title="All 2 branches covered.">			for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L113" title="All 2 branches covered.">				for (int j = 0; j &lt; numberOfColls; j++) {</span>
+<span class="fc" id="L114">					result[i][j] = ComplexMath.add(a[i][j], b[i][j]);</span>
+				}
+			}
+		}
+
+<span class="fc" id="L119">		return result;</span>
+	}
+
+	/**
+	 * Performs the subtract between 2 2D arrays of double
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of double
+	 */
+	public static double[][] subtract(double[][] a, double[][] b) {
+<span class="fc" id="L130">		double[][] result = null;</span>
+<span class="fc" id="L131">		int numberOfRows = a.length;</span>
+<span class="fc" id="L132">		int numberOfColls = a[0].length;</span>
+<span class="pc bpc" id="L133" title="1 of 4 branches missed.">		if (a[0].length == b[0].length &amp;&amp; a.length == b.length) {</span>
+<span class="fc" id="L134">			result = new double[numberOfRows][numberOfColls];</span>
+<span class="fc bfc" id="L135" title="All 2 branches covered.">			for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L136" title="All 2 branches covered.">				for (int j = 0; j &lt; numberOfColls; j++) {</span>
+<span class="fc" id="L137">					result[i][j] = a[i][j] - b[i][j];</span>
+				}
+			}
+		}
+
+<span class="fc" id="L142">		return result;</span>
+	}
+
+	/**
+	 * Performs the subtract between 2 2D arrays of complex numbers
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of complex numbers
+	 */
+	public static ComplexNumber[][] subtract(ComplexNumber[][] a, ComplexNumber[][] b) {
+<span class="fc" id="L153">		ComplexNumber[][] result = null;</span>
+<span class="fc" id="L154">		int numberOfRows = a.length;</span>
+<span class="fc" id="L155">		int numberOfColls = a[0].length;</span>
+<span class="pc bpc" id="L156" title="1 of 4 branches missed.">		if (a[0].length == b[0].length &amp;&amp; a.length == b.length) {</span>
+<span class="fc" id="L157">			result = new ComplexNumber[numberOfRows][numberOfColls];</span>
+<span class="fc bfc" id="L158" title="All 2 branches covered.">			for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L159" title="All 2 branches covered.">				for (int j = 0; j &lt; numberOfColls; j++) {</span>
+<span class="fc" id="L160">					result[i][j] = ComplexMath.subtract(a[i][j], b[i][j]);</span>
+				}
+			}
+		}
+
+<span class="fc" id="L165">		return result;</span>
+	}
+
+	/**
+	 * Check if 2 2D arrays of double are equal.
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return boolean true if the two matrices are equal, otherwise false.
+	 */
+	public static boolean areEqual(double[][] a, double[][] b) {
+<span class="fc" id="L176">		int numberOfRows = a.length;</span>
+<span class="fc" id="L177">		int numberOfColls = a[0].length;</span>
+<span class="pc bpc" id="L178" title="1 of 4 branches missed.">		if (a[0].length == b[0].length &amp;&amp; a.length == b.length) {</span>
+<span class="fc bfc" id="L179" title="All 2 branches covered.">			for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L180" title="All 2 branches covered.">				for (int j = 0; j &lt; numberOfColls; j++) {</span>
+<span class="fc bfc" id="L181" title="All 2 branches covered.">					if (a[i][j] != b[i][j]) {</span>
+<span class="fc" id="L182">						return false;</span>
+					}
+				}
+			}
+<span class="fc" id="L186">			return true;</span>
+		}
+
+<span class="fc" id="L189">		return false;</span>
+	}
+
+	/**
+	 * Check if 2 2D arrays of complex numbers are equal.
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return boolean true if the two matrices are equal, otherwise false.
+	 */
+	public static boolean areEqual(ComplexNumber[][] a, ComplexNumber[][] b) {
+<span class="fc" id="L200">		int numberOfRows = a.length;</span>
+<span class="fc" id="L201">		int numberOfColls = a[0].length;</span>
+<span class="pc bpc" id="L202" title="1 of 4 branches missed.">		if (a[0].length != b[0].length || a.length != b.length) {</span>
+<span class="fc" id="L203">			return false;</span>
+		}
+
+<span class="fc bfc" id="L206" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L207" title="All 2 branches covered.">			for (int j = 0; j &lt; numberOfColls; j++) {</span>
+<span class="fc bfc" id="L208" title="All 2 branches covered.">				if (!a[i][j].equals(b[j][j])) {</span>
+<span class="fc" id="L209">					return false;</span>
+				}
+			}
+		}
+<span class="fc" id="L213">		return true;</span>
+	}
+
+	private static double[][] performMultiplicationWithConstant(double[][] a, double ct, int iPosition, int jPosition,
+			double[][] resultMatrix) {
+<span class="fc" id="L218">		int numberOfRowsMatrixA = a.length;</span>
+<span class="fc" id="L219">		int numberOfCollsMatrixA = a[0].length;</span>
+<span class="fc" id="L220">		double[][] result = resultMatrix;</span>
+<span class="fc bfc" id="L221" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRowsMatrixA; i++) {</span>
+<span class="fc bfc" id="L222" title="All 2 branches covered.">			for (int j = 0; j &lt; numberOfCollsMatrixA; j++) {</span>
+<span class="fc" id="L223">				result[i + iPosition][j + jPosition] = ct * a[i][j];</span>
+			}
+		}
+
+<span class="fc" id="L227">		return result;</span>
+	}
+
+	/**
+	 * Performs the tensor product between 2 2D arrays of double
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of double
+	 */
+	public static double[][] tensorProduct(double[][] a, double[][] b) {
+<span class="fc" id="L238">		int k = 0;</span>
+<span class="fc" id="L239">		int numberOfRowsMatrixA = a.length;</span>
+<span class="fc" id="L240">		int numberOfCollsMatrixA = a[0].length;</span>
+<span class="fc" id="L241">		int numberOfRowsMatrixB = b.length;</span>
+<span class="fc" id="L242">		int numberOfCollsMatrixB = b[0].length;</span>
+<span class="fc" id="L243">		int numberOfRowsResultMatrix = numberOfRowsMatrixA * numberOfRowsMatrixB;</span>
+<span class="fc" id="L244">		int numberOfCollsResultMatrix = numberOfCollsMatrixA * +numberOfCollsMatrixB;</span>
+<span class="fc" id="L245">		double[][] result = new double[numberOfRowsResultMatrix][numberOfCollsResultMatrix];</span>
+<span class="fc bfc" id="L246" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRowsResultMatrix; i++) {</span>
+<span class="fc" id="L247">			Arrays.fill(result[i], 0.0);</span>
+		}
+<span class="fc bfc" id="L249" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRowsMatrixA; i++) {</span>
+<span class="fc bfc" id="L250" title="All 2 branches covered.">			for (int j = 0; j &lt; numberOfCollsMatrixA; j++) {</span>
+<span class="fc" id="L251">				result = performMultiplicationWithConstant(b, a[i][j], k, j * 2, result);</span>
+			}
+<span class="fc" id="L253">			k += 2;</span>
+		}
+<span class="fc" id="L255">		return result;</span>
+	}
+
+	/**
+	 * Performs the tensor product between 2 2D arrays of complex numbers
+	 * 
+	 * @param a first 2D array
+	 * @param b second 2D array
+	 * @return 2D array of complex numbers
+	 */
+	public static ComplexNumber[][] tensorProduct(ComplexNumber[][] a, ComplexNumber[][] b) {
+<span class="fc" id="L266">		int k = 0;</span>
+<span class="fc" id="L267">		int numberOfRowsMatrixA = a.length;</span>
+<span class="fc" id="L268">		int numberOfCollsMatrixA = a[0].length;</span>
+<span class="fc" id="L269">		int numberOfRowsMatrixB = b.length;</span>
+<span class="fc" id="L270">		int numberOfCollsMatrixB = b[0].length;</span>
+<span class="fc" id="L271">		int numberOfRowsResultMatrix = numberOfRowsMatrixA * numberOfRowsMatrixB;</span>
+<span class="fc" id="L272">		int numberOfCollsResultMatrix = numberOfCollsMatrixA * +numberOfCollsMatrixB;</span>
+<span class="fc" id="L273">		ComplexNumber[][] result = new ComplexNumber[numberOfRowsResultMatrix][numberOfCollsResultMatrix];</span>
+<span class="fc bfc" id="L274" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRowsResultMatrix; i++) {</span>
+<span class="fc bfc" id="L275" title="All 2 branches covered.">			for (int j = 0; j &lt; numberOfCollsResultMatrix; j++) {</span>
+<span class="fc" id="L276">				result[i][j] = new ComplexNumber(0.0, 0.0);</span>
+			}
+		}
+<span class="fc bfc" id="L279" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRowsMatrixA; i++) {</span>
+<span class="fc bfc" id="L280" title="All 2 branches covered.">			for (int j = 0; j &lt; numberOfCollsMatrixA; j++) {</span>
+<span class="fc" id="L281">				result = performMultiplicationWithConstant(b, a[i][j], k, j * 2, result);</span>
+			}
+<span class="fc" id="L283">			k += 2;</span>
+		}
+<span class="fc" id="L285">		return result;</span>
+	}
+
+	private static ComplexNumber[][] performMultiplicationWithConstant(ComplexNumber[][] a, ComplexNumber ct,
+			int iPosition, int jPosition, ComplexNumber[][] resultMatrix) {
+<span class="fc" id="L290">		int numberOfRowsMatrixA = a.length;</span>
+<span class="fc" id="L291">		int numberOfCollsMatrixA = a[0].length;</span>
+<span class="fc" id="L292">		ComplexNumber[][] result = resultMatrix;</span>
+<span class="fc bfc" id="L293" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRowsMatrixA; i++) {</span>
+<span class="fc bfc" id="L294" title="All 2 branches covered.">			for (int j = 0; j &lt; numberOfCollsMatrixA; j++) {</span>
+<span class="fc" id="L295">				result[i + iPosition][j + jPosition] = ComplexMath.multiply(ct, a[i][j]);</span>
+
+			}
+		}
+
+<span class="fc" id="L300">		return result;</span>
+	}
+
+
+	/**
+	 * Generate an Identity matrix
+	 * @param numberOfRows the number of rows of the identity matrix
+	 * @return 2D array of complex numbers
+	 */
+	public static ComplexNumber[][] generateIdentityMatrix(int numberOfRows) {
+<span class="fc" id="L310">		ComplexNumber[][] identityMatrix = new ComplexNumber[numberOfRows][numberOfRows];</span>
+<span class="fc bfc" id="L311" title="All 2 branches covered.">		for (int i = 0; i &lt; numberOfRows; i++) {</span>
+<span class="fc bfc" id="L312" title="All 2 branches covered.">			for (int j = 0; j &lt; numberOfRows; j++) {</span>
+<span class="fc bfc" id="L313" title="All 2 branches covered.">				if (i == j) {</span>
+<span class="fc" id="L314">					identityMatrix[i][j] = new ComplexNumber(1.0, 0.0);</span>
+<span class="fc" id="L315">					continue;</span>
+				}
+
+<span class="fc" id="L318">				identityMatrix[i][j] = new ComplexNumber(0.0, 0.0);</span>
+
+			}
+		}
+<span class="fc" id="L322">		return identityMatrix;</span>
+	}
+	
+	/**
+	 * Perform multiplication between a matrix and a constant.
+	 * @param a matrix
+	 * @param ct constant
+	 * @return 2D array of complex numbers
+	 */
+	public static ComplexNumber[][] multiplyByConstant(ComplexNumber[][] a,double ct){
+<span class="fc" id="L332">		int numberOfRows=a.length;</span>
+<span class="fc" id="L333">		int numberOfColls=a[0].length;</span>
+<span class="fc" id="L334">		ComplexNumber[][] resultMatrix=new ComplexNumber[numberOfRows][numberOfColls];</span>
+<span class="fc bfc" id="L335" title="All 2 branches covered.">		for(int i=0;i&lt;numberOfRows;i++){</span>
+<span class="fc bfc" id="L336" title="All 2 branches covered.">			for(int j=0;j&lt;numberOfColls;j++){</span>
+<span class="fc" id="L337">				resultMatrix[i][j]=ComplexMath.multiply(a[i][j], ct);</span>
+			}
+		}
+<span class="fc" id="L340">		return resultMatrix;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.7.201606060606</span></div></body></html>

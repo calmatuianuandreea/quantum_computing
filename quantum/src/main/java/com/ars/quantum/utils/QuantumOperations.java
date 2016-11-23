@@ -1,6 +1,5 @@
 package com.ars.quantum.utils;
 
-import com.ars.quantum.exception.NullValueException;
 import java.util.List;
 
 import com.ars.complexnumbers.ComplexMath;
@@ -32,28 +31,24 @@ public class QuantumOperations {
 	 * Perform the tensor product between two or more qubits. Example, for three
 	 * qubits |0>, |0> and |1>, the result will be |001>.
 	 * 
-	 * @param quantumRegister 
+	 * @param qubitsList list of qubits
 	 * @return qubit the tensor product of the two qubits.
 	 */
 	public static Qubit entangle(List<Qubit> qubitsList) {
- 		if (qubitsList.size() < 2) {
-   			return null;
-  		}
- 		Qubit bufferQubit = qubitsList.get(0);
- 		for (int i = 1; i < qubitsList.size(); i++) {
- 			bufferQubit = performTensorProduct(bufferQubit, qubitsList.get(i));
-   		}
- 		
- 		if(bufferQubit == null)
- 			throw new NullValueException("returned value is null for method entangle");
- 		else
- 			return bufferQubit;
-  	}
+		if (qubitsList.size() < 2) {
+			return null;
+		}
+		Qubit bufferQubit = qubitsList.get(0);
+		for (int i = 1; i < qubitsList.size(); i++) {
+			bufferQubit = performTensorProduct(bufferQubit, qubitsList.get(i));
+		}
+		return bufferQubit;
+	}
 
 	private static Qubit performTensorProduct(Qubit q1, Qubit q2) {
 		int len1 = q1.getQubit().length;
 		int len2 = q2.getQubit().length;
-		ComplexNumber[] complexNumberList = new ComplexNumber[len1 * len2];
+		ComplexNumber[] complexNumberList = new ComplexNumber[len1 * 2];
 		int k = 0;
 		for (int i = 0; i < len1; i++) {
 			for (int j = 0; j < len2; j++) {
@@ -80,11 +75,8 @@ public class QuantumOperations {
 			complexNumberList[i] = sum;
 		}
 		q0 = new Qubit(complexNumberList);
+		return q0;
 
-		if(q0 == null)
-			throw new NullValueException("returned value is null for method apply");
-		else
-			return q0;
 	}
 	
 	private static Qubit apply(Qubit q, ComplexNumber[][] gate) {
@@ -103,11 +95,7 @@ public class QuantumOperations {
 			complexNumberList[i] = sum;
 		}
 		q0 = new Qubit(complexNumberList);
-		
-		if(q0 == null)
-			throw new NullValueException("returned value is null for method apply");
-		else
-			return q0;
+		return q0;
 
 	}
 
@@ -122,7 +110,6 @@ public class QuantumOperations {
 		return apply(q, gate.getUnitaryMatrix());
 	}
 
-	
 	/**
 	 * Apply a specified Gate to a qubit.
 	 * 
@@ -152,10 +139,7 @@ public class QuantumOperations {
 			transpose[0][i] = z[i];
 		}
 
-		if(transpose == null)
-			throw new NullValueException("returned value is null for method calculateTranspose");
-		else
-			return transpose;
+		return transpose;
 	}
 
 	/**
@@ -198,15 +182,9 @@ public class QuantumOperations {
 				}
 			}
 		}
-		
-		if(result == null)
-			throw new NullValueException("returned value is null for method calculateOuterProduct");
-		else
-			return result;
+		return result;
 	}
 
-	
-	
 	/**
 	 * Performs the outer product of two qubits |q1><q2|
 	 * 
@@ -239,30 +217,26 @@ public class QuantumOperations {
 				result = ComplexMath.add(result, ComplexMath.multiply(transposeFirstArray[0][i], z2[i]));
 			}
 		}
-		
-		if(result == null)
-			throw new NullValueException("returned value is null for method calculateInnerProduct");
-		else
-			return result;
+		return result;
 	}
 
 	/**
-	 * Performs the inner product of two qubits <q1|q2>
+	 * Performs the outer product of two qubits <q1|q2>
 	 * 
 	 * @param q1 first qubit
 	 * @param q2 second qubit
-	 * @return ComplexNumber the inner product of the two qubits.
+	 * @return ComplexNumber the outer product of the two qubits.
 	 */
 	public static ComplexNumber innerProduct(Qubit q1, Qubit q2) {
 		return calculateInnerProduct(q1.getQubit(), q2.getQubit());
 	}
 	
 	/**
-	 * Performs the inner product of two qubits <q1|q2>
+	 * Performs the outer product of two qubits <q1|q2>
 	 * 
 	 * @param z1 first qubit
 	 * @param z2 second qubit
-	 * @return ComplexNumber the inner product of the two qubits.
+	 * @return ComplexNumber the outer product of the two qubits.
 	 */
 	public static ComplexNumber innerProduct(ComplexNumber[] z1, ComplexNumber[] z2) {
 		return calculateInnerProduct(z1, z2);

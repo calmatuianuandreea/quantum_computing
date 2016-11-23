@@ -1,7 +1,11 @@
 package com.ars.algorithms;
 
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import com.ars.circuits.CircuitProducer;
+import com.ars.circuits.CircuitsAbstractFactory;
 import com.ars.gates.GateProducer;
 import com.ars.gates.GatesAbstractFactory;
 import com.ars.qubits.Qubit;
@@ -10,7 +14,8 @@ public abstract class QuantumAlgorithms {
 	protected double[][] oracle;
 	protected Qubit resultQubit;
 	protected GatesAbstractFactory gateFactory = GateProducer.getGateFactory();
-
+	protected CircuitsAbstractFactory circuitFactory = CircuitProducer.getCircuitFactory();
+	private static final Logger QUANTUM_ALGO_LOGGER = LogManager.getLogger(QuantumAlgorithms.class);
 
 	public QuantumAlgorithms() {
 
@@ -30,5 +35,8 @@ public abstract class QuantumAlgorithms {
 
 	public abstract void measure();
 
+	public Logger getLogger() {
+		return QUANTUM_ALGO_LOGGER;
+	}
 
 }

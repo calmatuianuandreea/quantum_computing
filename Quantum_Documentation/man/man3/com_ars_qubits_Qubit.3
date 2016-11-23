@@ -1,0 +1,124 @@
+.TH "com.ars.qubits.Qubit" 3 "Wed Nov 23 2016" "quantum - computing" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.ars.qubits.Qubit \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBcom\&.ars\&.qubits\&.QubitMinus\fP, \fBcom\&.ars\&.qubits\&.QubitOne\fP, \fBcom\&.ars\&.qubits\&.QubitPlus\fP, and \fBcom\&.ars\&.qubits\&.QubitZero\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBQubit\fP (\fBComplexNumber\fP no0, \fBComplexNumber\fP no1)"
+.br
+.ti -1c
+.RI "\fBQubit\fP (\fBComplexNumber\fP[] \fBqubitVector\fP)"
+.br
+.ti -1c
+.RI "\fBComplexNumber\fP [] \fBgetQubit\fP ()"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBequals\fP (Object o)"
+.br
+.ti -1c
+.RI "int \fBhashCode\fP ()"
+.br
+.ti -1c
+.RI "boolean \fBisValid\fP ()"
+.br
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBComplexNumber\fP [] \fBqubitVector\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.ars\&.qubits\&.Qubit\&.Qubit (\fBComplexNumber\fP no0, \fBComplexNumber\fP no1)"
+Constructs a new \fC\fBQubit\fP\fP object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIno0\fP complex number 
+.br
+\fIno1\fP complex number 
+.RE
+.PP
+
+.SS "com\&.ars\&.qubits\&.Qubit\&.Qubit (\fBComplexNumber\fP [] qubitVector)"
+Constructs a new \fC\fBQubit\fP\fP object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIqubitVector\fP an array of 2 complex numbers 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.ars\&.qubits\&.Qubit\&.equals (Object o)"
+Check if passed \fC\fBQubit\fP\fP is equal to the current\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIo\fP the qubit to be checked 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if the two qubits are equals, otherwise false 
+.RE
+.PP
+
+.SS "\fBComplexNumber\fP [] com\&.ars\&.qubits\&.Qubit\&.getQubit ()"
+Return the qubit represented as an array of 2 complex numbers\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+qubit 
+.RE
+.PP
+
+.SS "int com\&.ars\&.qubits\&.Qubit\&.hashCode ()"
+Calculate the hashcode of the qubit\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+int hashcode 
+.RE
+.PP
+
+.SS "boolean com\&.ars\&.qubits\&.Qubit\&.isValid ()"
+Check if qubit state is valid 
+.PP
+\fBReturns:\fP
+.RS 4
+true if the state is valid, otherwise false 
+.RE
+.PP
+
+.SS "String com\&.ars\&.qubits\&.Qubit\&.toString ()"
+Return a string representation of the qubit\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+string the representation of the qubit 
+.RE
+.PP
+
+.SH "Member Data Documentation"
+.PP 
+.SS "\fBComplexNumber\fP [] com\&.ars\&.qubits\&.Qubit\&.qubitVector\fC [protected]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for quantum - computing from the source code\&.

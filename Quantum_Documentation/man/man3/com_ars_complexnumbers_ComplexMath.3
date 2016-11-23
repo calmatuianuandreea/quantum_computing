@@ -1,0 +1,344 @@
+.TH "com.ars.complexnumbers.ComplexMath" 3 "Wed Nov 23 2016" "quantum - computing" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.ars.complexnumbers.ComplexMath \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBadd\fP (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBmultiply\fP (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBsubtract\fP (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBdivide\fP (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBconjugate\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static double \fBmod\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBsquare\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBsin\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBcos\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBtan\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBexp\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBpow\fP (\fBComplexNumber\fP z, int power)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBinverse\fP (\fBComplexNumber\fP z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBmultiply\fP (\fBComplexNumber\fP z, double constant)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBadd\fP (\fBComplexNumber\fP z, double constant)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBsubtract\fP (\fBComplexNumber\fP z, double constant)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBdivide\fP (\fBComplexNumber\fP z, double constant)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "\fBComplexMath\fP"
+.PP
+.PP
+\fBComplexMath\fP implements the basic operations that can be performed on complex numbers\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Mihai Seba 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.add (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)\fC [static]\fP"
+Performs the addition of two complex numbers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz1\fP first complex number 
+.br
+\fIz2\fP second complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the sum of the two complex numbers, z1 and z2, z3=z1+z2 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.add (\fBComplexNumber\fP z, double constant)\fC [static]\fP"
+Performs the addition of a complex number with a double\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP complex number 
+.br
+\fIconstant\fP double number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the result of addition\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.conjugate (\fBComplexNumber\fP z)\fC [static]\fP"
+Calculates the complex conjugate of a \fC\fBComplexNumber\fP\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the complex conjugate number of z 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.cos (\fBComplexNumber\fP z)\fC [static]\fP"
+Calculates the cosine of the \fC\fBComplexNumber\fP\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+return a \fC\fBComplexNumber\fP\fP which is cosine of z 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.divide (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)\fC [static]\fP"
+Performs the division of two complex numbers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz1\fP first complex number 
+.br
+\fIz2\fP second complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the result of division, z1 and z2, z3=z1/z2 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.divide (\fBComplexNumber\fP z, double constant)\fC [static]\fP"
+Performs the division of a complex number with a double\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP complex number 
+.br
+\fIconstant\fP double number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the result of division\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.exp (\fBComplexNumber\fP z)\fC [static]\fP"
+Calculates the exponential of the \fC\fBComplexNumber\fP\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+return a \fC\fBComplexNumber\fP\fP which is e^ 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.inverse (\fBComplexNumber\fP z)\fC [static]\fP"
+Calculates the inverse of a \fC\fBComplexNumber\fP\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+return a \fC\fBComplexNumber\fP\fP which is 1/z 
+.RE
+.PP
+
+.SS "static double com\&.ars\&.complexnumbers\&.ComplexMath\&.mod (\fBComplexNumber\fP z)\fC [static]\fP"
+The modulus, magnitude or the absolute value of current complex number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the modulus of number z1 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.multiply (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)\fC [static]\fP"
+Performs the multiplication of two complex numbers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz1\fP first complex number 
+.br
+\fIz2\fP second complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the result of multiplication, z1 and z2, z3=z1*z2 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.multiply (\fBComplexNumber\fP z, double constant)\fC [static]\fP"
+Performs the multiplication of a complex number with a double\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP complex number 
+.br
+\fIconstant\fP double number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the result of multiplication\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.pow (\fBComplexNumber\fP z, int power)\fC [static]\fP"
+Calculates the \fC\fBComplexNumber\fP\fP to the passed integer power\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.br
+\fIpower\fP the power 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+return a \fC\fBComplexNumber\fP\fP which is z^power 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.sin (\fBComplexNumber\fP z)\fC [static]\fP"
+Calculates the sine of the \fC\fBComplexNumber\fP\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+return a \fC\fBComplexNumber\fP\fP which is sine of z 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.square (\fBComplexNumber\fP z)\fC [static]\fP"
+Calculates the square of the \fC\fBComplexNumber\fP\fP\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the square of complex number z 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.subtract (\fBComplexNumber\fP z1, \fBComplexNumber\fP z2)\fC [static]\fP"
+Performs the subtraction of two complex numbers\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz1\fP first complex number 
+.br
+\fIz2\fP second complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the result of subtraction, z1 and z2, z3=z1-z2 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.subtract (\fBComplexNumber\fP z, double constant)\fC [static]\fP"
+Performs the subtraction of a complex number with a double\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP complex number 
+.br
+\fIconstant\fP double number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+the result of subtraction\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.complexnumbers\&.ComplexMath\&.tan (\fBComplexNumber\fP z)\fC [static]\fP"
+Calculates the tangent of the \fC\fBComplexNumber\fP\fP 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz\fP the input complex number 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+return a \fC\fBComplexNumber\fP\fP which is tangent of z 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for quantum - computing from the source code\&.

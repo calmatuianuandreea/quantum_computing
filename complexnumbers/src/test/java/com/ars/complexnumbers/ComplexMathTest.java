@@ -78,10 +78,10 @@ public class ComplexMathTest {
 		 * 
 		 */
 		ComplexNumber expectedNumber = new ComplexNumber(-7.0, 22.0);
-		ComplexNumber realValue = null;
+		ComplexNumber multiplyResult = null;
 
-		realValue = ComplexMath.multiply(firstNumber, secondNumber);
-		assertEquals(true, realValue.equals(expectedNumber));
+		multiplyResult = ComplexMath.multiply(firstNumber, secondNumber);
+		assertEquals(true, multiplyResult.equals(expectedNumber));
 	}
 
 	@Test

@@ -1,0 +1,5 @@
+<map id="com.ars.quantum.utils.QuantumOperations.transpose" name="com.ars.quantum.utils.QuantumOperations.transpose">
+<area shape="rect" id="node2" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations.html#adbf2c6d628ae274e0c8e68d8712c2732" title="com.ars.quantum.utils.Quantum\lOperations.applyGate" alt="" coords="262,5,470,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a88f7c027a6f692b9fa2e5e89f18b4a3d" title="com.ars.quantum.utils.Quantum\lOperationsTest.testInnerProduct" alt="" coords="261,71,471,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations_test.html#a09270ff6a4f9ed716f38d2a911495e4a" title="com.ars.quantum.utils.Quantum\lOperationsTest.testTranspose" alt="" coords="262,136,470,177"/>
+</map>

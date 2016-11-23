@@ -1,0 +1,27 @@
+var classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test =
+[
+    [ "setUp", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a10e65a668d518544cd556193de505348", null ],
+    [ "tearDown", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a4c7ef10675db9e4cf278ef3d4c88dc75", null ],
+    [ "testGenerateIdentityMatrix", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a97c53b085b9edf71d4b9488f19b6ba40", null ],
+    [ "testMatrixAddComplex", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aad67e722c86ac9893a746e586e76e6c6", null ],
+    [ "testMatrixAddComplexDifferentLengths", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a6a11674dd3048492205cfcbd810650a4", null ],
+    [ "testMatrixAddDouble", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a9dd0cf555f9f6a02e67c400bd2ef6e8b", null ],
+    [ "testMatrixAddDoublesDifferentLengths", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a95be19fcaf80e4fa48732d3a03c55afc", null ],
+    [ "testMatrixComplexAreEqual", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a1f520804726b4695d38491efb081a62f", null ],
+    [ "testMatrixComplexAreNotEqual", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a510001ff5f110f317a003aad024b7814", null ],
+    [ "testMatrixComplexDifferentSizes", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a2067fc7495133c6604494ae61c0b21f5", null ],
+    [ "testMatrixDoubleAreEqual", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a8cc1964185da3b73b5a1f4f38f0bb25d", null ],
+    [ "testMatrixDoubleAreNotEqual", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#ae47b404462da670081830dded82d3252", null ],
+    [ "testMatrixDoubleDifferentSizes", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a2263b15fae56de8579bc572cd67a5db2", null ],
+    [ "testMatrixMultiplyComplex", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aa87b6e37af0eb7ae67984f35548d64dc", null ],
+    [ "testMatrixMultiplyComplexDifferentSizes", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a9ee4aca46fc14b35d2f779747e609239", null ],
+    [ "testMatrixMultiplyDouble", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a32f8097861b74ba4b4ee3d601fcba520", null ],
+    [ "testMatrixMultiplyDoubleDifferentSizes", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aabeb9f046a3146998afea51488839af6", null ],
+    [ "testMatrixSubtractComplex", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a7b8069b3de70b2eb9d655eb142002d0b", null ],
+    [ "testMatrixSubtractComplexDifferentLengths", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#af0c58a11a8b195509365a0f786041c86", null ],
+    [ "testMatrixSubtractDouble", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a531e80f804f35d3f8fd8d35eab4b4faa", null ],
+    [ "testMatrixSubtractDoublesDifferentLengths", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a5ea063677df577695471228de2a4b6bf", null ],
+    [ "testMultiplyByConstant", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a523958e57a1bc8ad1ca05c15cfbaa4d5", null ],
+    [ "testTensorProduct", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a531c3daf0534ee2d2776e648f0476ae5", null ],
+    [ "testTensorProductComplex", "classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#ad96b1789d5fc5c530d9e6e64c9b8f374", null ]
+];

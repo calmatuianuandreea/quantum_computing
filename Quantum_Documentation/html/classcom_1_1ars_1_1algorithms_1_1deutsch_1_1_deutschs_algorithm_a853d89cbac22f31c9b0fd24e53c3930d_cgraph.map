@@ -1,0 +1,8 @@
+<map id="com.ars.algorithms.deutsch.DeutschsAlgorithm.isFunctionConstant" name="com.ars.algorithms.deutsch.DeutschsAlgorithm.isFunctionConstant">
+<area shape="rect" id="node2" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_quantum_operations.html#aea9e037d8e8f70173be3feb5ee89ddc4" title="com.ars.quantum.utils.Quantum\lOperations.entangle" alt="" coords="311,5,519,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ars_1_1qubits_1_1_qubit.html#a48b2de0bf6b0efc8470d687a239085db" title="com.ars.qubits.Qubit.get\lQubit" alt="" coords="332,71,497,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a0283601c9ce6efc0636468ee5e65f299" title="com.ars.complexnumbers.Complex\lMath.multiply" alt="" coords="301,136,528,177"/>
+<area shape="rect" id="node7" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#aed293397f1ec0c1dda82589b436388c3" title="com.ars.complexnumbers.Complex\lMath.conjugate" alt="" coords="301,201,528,243"/>
+<area shape="rect" id="node5" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a4cb4de35836a0ca818d3f2ce2df07736" title="com.ars.complexnumbers.Complex\lNumber.getReal" alt="" coords="576,136,803,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a611fa4712cc691cf1e13e91f182c1850" title="com.ars.complexnumbers.Complex\lNumber.getImaginary" alt="" coords="576,201,803,243"/>
+</map>

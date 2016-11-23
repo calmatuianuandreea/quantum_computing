@@ -1,6 +1,5 @@
 package com.ars.quantum.utils;
 
-import com.ars.quantum.exception.NullValueException;
 import java.util.Arrays;
 
 import com.ars.complexnumbers.ComplexMath;
@@ -14,13 +13,69 @@ import com.ars.complexnumbers.ComplexNumber;
 public class MatrixOperations {
 
 	/**
+	 * 
+	 * @author Dacian
+	 * 
+	 * Exception defined to catch incorrect matrix sizes for multiplication
+	 * 
+	 * @param a : first 2D matrix
+	 * @param b : second 2D matrix  
+	 */
+	
+	public static class IncorrectMatrixSizeException extends Exception {
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		private double[][] a; 
+		private double[][] b;
+		private ComplexNumber[][] a2;
+		private ComplexNumber[][] b2;
+		private String matrixOperation; // type of the operation performed with matrix 
+		
+		public IncorrectMatrixSizeException(String operation,double[][] a, double[][] b){
+			this.a = a;
+			this.b = b;
+			matrixOperation = operation;
+			
+		}
+		
+		public IncorrectMatrixSizeException(String operation, ComplexNumber[][] a2, ComplexNumber[][] b2) {
+			// TODO Auto-generated constructor stub
+			this.a2=a2;
+			this.b2=b2;
+			matrixOperation = operation;
+		}
+
+		public double[][] getFirstMatrix(){
+			return a;
+		}
+		
+		public double[][] getSecondMatrix(){
+			return b;
+		}
+		
+		public ComplexNumber[][] getFirstComplexMatrix(){
+			return a2;
+		}
+		
+		public ComplexNumber[][] getSecondComplexMatrix(){
+			return b2;
+		}
+		
+		public String getMatrixOperation(){
+			return matrixOperation;
+		}
+	}
+	
+	/**
 	 * Performs the multiplication between 2 2D arrays of double
 	 * 
 	 * @param a first 2D array
 	 * @param b second 2D array
 	 * @return 2D array of double
 	 */
-	public static double[][] multiply(double[][] a, double[][] b) {
+	public static double[][] multiply(double[][] a, double[][] b) throws IncorrectMatrixSizeException {
 		int numberOfRows = a.length;
 		int numberOfColls = a[0].length;
 		int numberOfRowsSecondMatrix = b.length;
@@ -40,10 +95,12 @@ public class MatrixOperations {
 				}
 			}
 		}
-		if(multiply == null)
-			throw new NullValueException("return value is null for method multiply");
-		else
-			return multiply;
+		else {
+			
+			throw new IncorrectMatrixSizeException("Multiply 2D matrix with double elements",a,b);
+		}
+		
+		return multiply;
 	}
 
 	/**
@@ -53,7 +110,7 @@ public class MatrixOperations {
 	 * @param b second 2D array
 	 * @return 2D array of complex numbers
 	 */
-	public static ComplexNumber[][] multiply(ComplexNumber[][] a, ComplexNumber[][] b) {
+	public static ComplexNumber[][] multiply(ComplexNumber[][] a, ComplexNumber[][] b) throws IncorrectMatrixSizeException {
 		int numberOfRows = a.length;
 		int numberOfColls = a[0].length;
 		int numberOfRowsSecondMatrix = b.length;
@@ -74,10 +131,11 @@ public class MatrixOperations {
 				}
 			}
 		}
-		if(multiply == null)
-			throw new NullValueException("return value is null for method multiply");
-		else
-			return multiply;
+		else{
+			
+			throw new IncorrectMatrixSizeException("Multiply 2D matrix with complex elements",a,b);
+		}
+		return multiply;
 	}
 
 	/**
@@ -87,7 +145,7 @@ public class MatrixOperations {
 	 * @param b second 2D array
 	 * @return 2D array of double
 	 */
-	public static double[][] add(double[][] a, double[][] b) {
+	public static double[][] add(double[][] a, double[][] b) throws IncorrectMatrixSizeException {
 		double[][] result = null;
 		int numberOfRows = a.length;
 		int numberOfColls = a[0].length;
@@ -99,11 +157,12 @@ public class MatrixOperations {
 				}
 			}
 		}
+		else{
+			
+			throw new IncorrectMatrixSizeException("Sum of 2D matrix with double elements",a,b);
+		}
 
-		if(result == null)
-			throw new NullValueException("return value is null for method add");
-		else
-			return result;
+		return result;
 	}
 
 	/**
@@ -113,7 +172,7 @@ public class MatrixOperations {
 	 * @param b second 2D array
 	 * @return 2D array of complex numbers
 	 */
-	public static ComplexNumber[][] add(ComplexNumber[][] a, ComplexNumber[][] b) {
+	public static ComplexNumber[][] add(ComplexNumber[][] a, ComplexNumber[][] b) throws IncorrectMatrixSizeException {
 		ComplexNumber[][] result = null;
 		int numberOfRows = a.length;
 		int numberOfColls = a[0].length;
@@ -125,11 +184,12 @@ public class MatrixOperations {
 				}
 			}
 		}
+		else{
+			
+			throw new IncorrectMatrixSizeException("Sum of 2D matrix with complex elements",a,b);
+		}
 
-		if(result == null)
-			throw new NullValueException("return value is null for method add");
-		else
-			return result;
+		return result;
 	}
 
 	/**
@@ -139,7 +199,7 @@ public class MatrixOperations {
 	 * @param b second 2D array
 	 * @return 2D array of double
 	 */
-	public static double[][] subtract(double[][] a, double[][] b) {
+	public static double[][] subtract(double[][] a, double[][] b) throws IncorrectMatrixSizeException {
 		double[][] result = null;
 		int numberOfRows = a.length;
 		int numberOfColls = a[0].length;
@@ -151,11 +211,12 @@ public class MatrixOperations {
 				}
 			}
 		}
+        else{
+			
+			throw new IncorrectMatrixSizeException("Substraction of 2D matrix with double elements",a,b);
+		}
 
-		if(result == null)
-			throw new NullValueException("return value is null for method substract");
-		else
-			return result;
+		return result;
 	}
 
 	/**
@@ -165,7 +226,7 @@ public class MatrixOperations {
 	 * @param b second 2D array
 	 * @return 2D array of complex numbers
 	 */
-	public static ComplexNumber[][] subtract(ComplexNumber[][] a, ComplexNumber[][] b) {
+	public static ComplexNumber[][] subtract(ComplexNumber[][] a, ComplexNumber[][] b) throws IncorrectMatrixSizeException {
 		ComplexNumber[][] result = null;
 		int numberOfRows = a.length;
 		int numberOfColls = a[0].length;
@@ -177,11 +238,12 @@ public class MatrixOperations {
 				}
 			}
 		}
+		else {
+		
+			throw new IncorrectMatrixSizeException("Substraction of 2D matrix with complex elements",a,b);
+		}
 
-		if(result == null)
-			throw new NullValueException("return value is null for method add");
-		else
-			return result;
+		return result;
 	}
 
 	/**
@@ -243,10 +305,7 @@ public class MatrixOperations {
 			}
 		}
 
-		if(result == null)
-			throw new NullValueException("return value is null for method performMultiplicationWithConstant");
-		else
-			return result;
+		return result;
 	}
 
 	/**
@@ -274,11 +333,7 @@ public class MatrixOperations {
 			}
 			k += 2;
 		}
-		
-		if(result == null)
-			throw new NullValueException("return value is null for method tensorProduct");
-		else
-			return result;
+		return result;
 	}
 
 	/**
@@ -308,11 +363,7 @@ public class MatrixOperations {
 			}
 			k += 2;
 		}
-		
-		if(result == null)
-			throw new NullValueException("return value is null for method tensorProduct");
-		else
-			return result;
+		return result;
 	}
 
 	private static ComplexNumber[][] performMultiplicationWithConstant(ComplexNumber[][] a, ComplexNumber ct,
@@ -327,10 +378,7 @@ public class MatrixOperations {
 			}
 		}
 
-		if(result == null)
-			throw new NullValueException("return value is null for method performMultiplicationWithConstant");
-		else
-			return result;
+		return result;
 	}
 
 
@@ -352,11 +400,7 @@ public class MatrixOperations {
 
 			}
 		}
-		
-		if(identityMatrix == null)
-			throw new NullValueException("return value is null for method generateIdentityMatrix");
-		else
-			return identityMatrix;
+		return identityMatrix;
 	}
 	
 	/**
@@ -374,10 +418,6 @@ public class MatrixOperations {
 				resultMatrix[i][j]=ComplexMath.multiply(a[i][j], ct);
 			}
 		}
-		
-		if(resultMatrix == null)
-			throw new NullValueException("return value is null for method multiplyByConstant");
-		else
-			return resultMatrix;
+		return resultMatrix;
 	}
 }

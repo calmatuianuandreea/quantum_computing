@@ -1,0 +1,7 @@
+<map id="com.ars.quantum.utils.MatrixOperations.subtract" name="com.ars.quantum.utils.MatrixOperations.subtract">
+<area shape="rect" id="node2" href="$classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#acd86694e5d961a9e964a5dc439677738" title="com.ars.algorithms.grover.\lGroversAlgorithm.GroversAlgorithm" alt="" coords="244,5,468,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a5ea063677df577695471228de2a4b6bf" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixSubtract\lDoublesDifferentLengths" alt="" coords="245,71,467,127"/>
+<area shape="rect" id="node4" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#af0c58a11a8b195509365a0f786041c86" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixSubtract\lComplexDifferentLengths" alt="" coords="245,151,467,207"/>
+<area shape="rect" id="node5" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a531e80f804f35d3f8fd8d35eab4b4faa" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixSubtract\lDouble" alt="" coords="245,231,467,287"/>
+<area shape="rect" id="node6" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a7b8069b3de70b2eb9d655eb142002d0b" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixSubtract\lComplex" alt="" coords="245,311,467,367"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="com.ars.quantum.utils.MatrixOperations.tensorProduct" name="com.ars.quantum.utils.MatrixOperations.tensorProduct">
+<area shape="rect" id="node2" href="$classcom_1_1ars_1_1algorithms_1_1deutsch_1_1_deutschs_algorithm.html#a01537777ec24738faf83660313759ea4" title="com.ars.algorithms.deutsch.\lDeutschsAlgorithm.init" alt="" coords="261,5,447,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ars_1_1algorithms_1_1grover_1_1_grovers_algorithm.html#ae2825f36c10e6c822aef9da35992bef3" title="com.ars.algorithms.grover.\lGroversAlgorithm.init" alt="" coords="267,71,441,112"/>
+<area shape="rect" id="node5" href="$classcom_1_1ars_1_1circuits_1_1_half_adder_cell.html#a540342262612af85393e1c07675fd7e9" title="com.ars.circuits.HalfAdder\lCell.getUnitaryMatrix" alt="" coords="267,136,441,177"/>
+<area shape="rect" id="node6" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a531c3daf0534ee2d2776e648f0476ae5" title="com.ars.quantum.utils.Matrix\lOperationsTest.testTensorProduct" alt="" coords="244,201,464,243"/>
+<area shape="rect" id="node7" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#ad96b1789d5fc5c530d9e6e64c9b8f374" title="com.ars.quantum.utils.Matrix\lOperationsTest.testTensorProduct\lComplex" alt="" coords="244,267,464,323"/>
+<area shape="rect" id="node4" href="$classcom_1_1ars_1_1quantumapp_1_1_grover_runner.html#a2524c67bd5ad4b1a33d613a4c12be738" title="com.ars.quantumapp.Grover\lRunner.run" alt="" coords="512,71,697,112"/>
+</map>

@@ -1,0 +1,224 @@
+.TH "com.ars.quantum.utils.QuantumOperations" 3 "Wed Nov 23 2016" "quantum - computing" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.ars.quantum.utils.QuantumOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static \fBQubit\fP \fBentangle\fP (\fBQubit\fP q1, \fBQubit\fP q2)"
+.br
+.ti -1c
+.RI "static \fBQubit\fP \fBentangle\fP (List< \fBQubit\fP > qubitsList)"
+.br
+.ti -1c
+.RI "static \fBQubit\fP \fBapplyGate\fP (\fBQubit\fP q, \fBIGate\fP gate)"
+.br
+.ti -1c
+.RI "static \fBQubit\fP \fBapplyGate\fP (\fBQubit\fP q, double[][] gate)"
+.br
+.ti -1c
+.RI "static \fBQubit\fP \fBapplyGate\fP (\fBQubit\fP q, \fBComplexNumber\fP[][] gate)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBtranspose\fP (\fBQubit\fP q)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBtranspose\fP (\fBComplexNumber\fP[] z)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBouterProduct\fP (\fBQubit\fP q1, \fBQubit\fP q2)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBouterProduct\fP (\fBComplexNumber\fP[] z1, \fBComplexNumber\fP[] z2)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBinnerProduct\fP (\fBQubit\fP q1, \fBQubit\fP q2)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP \fBinnerProduct\fP (\fBComplexNumber\fP[] z1, \fBComplexNumber\fP[] z2)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementations of basic operations that can be applied on qubits\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "static \fBQubit\fP com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.applyGate (\fBQubit\fP q, \fBIGate\fP gate)\fC [static]\fP"
+Apply a specified Gate to a qubit\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq\fP qubit\&. 
+.br
+\fIgate\fP gate that will be applied 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qubit 
+.RE
+.PP
+
+.SS "static \fBQubit\fP com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.applyGate (\fBQubit\fP q, double gate[][])\fC [static]\fP"
+Apply a specified Gate to a qubit\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq\fP qubit\&. 
+.br
+\fIgate\fP gate that will be applied 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qubit 
+.RE
+.PP
+
+.SS "static \fBQubit\fP com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.applyGate (\fBQubit\fP q, \fBComplexNumber\fP gate[][])\fC [static]\fP"
+Apply a specified Gate to a qubit\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq\fP qubit\&. 
+.br
+\fIgate\fP gate that will be applied 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qubit 
+.RE
+.PP
+
+.SS "static \fBQubit\fP com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.entangle (\fBQubit\fP q1, \fBQubit\fP q2)\fC [static]\fP"
+Performs the tensor product of two qubits\&. Example, if q1=|0> and q2=|1> the method will return |01>\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq1\fP first qubit 
+.br
+\fIq2\fP second qubit 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qubit the tensor product of the two qubits\&. 
+.RE
+.PP
+
+.SS "static \fBQubit\fP com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.entangle (List< \fBQubit\fP > qubitsList)\fC [static]\fP"
+Perform the tensor product between two or more qubits\&. Example, for three qubits |0>, |0> and |1>, the result will be |001>\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIqubitsList\fP list of qubits 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+qubit the tensor product of the two qubits\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.innerProduct (\fBQubit\fP q1, \fBQubit\fP q2)\fC [static]\fP"
+Performs the outer product of two qubits <q1|q2>
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq1\fP first qubit 
+.br
+\fIq2\fP second qubit 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+ComplexNumber the outer product of the two qubits\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.innerProduct (\fBComplexNumber\fP [] z1, \fBComplexNumber\fP [] z2)\fC [static]\fP"
+Performs the outer product of two qubits <q1|q2>
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz1\fP first qubit 
+.br
+\fIz2\fP second qubit 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+ComplexNumber the outer product of the two qubits\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.outerProduct (\fBQubit\fP q1, \fBQubit\fP q2)\fC [static]\fP"
+Performs the outer product of two qubits |q1><q2|
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq1\fP first qubit 
+.br
+\fIq2\fP second qubit 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+ComplexNumber the outer product of the two qubits\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.outerProduct (\fBComplexNumber\fP [] z1, \fBComplexNumber\fP [] z2)\fC [static]\fP"
+Performs the outer product of two qubits |q1><q2|
+.PP
+\fBParameters:\fP
+.RS 4
+\fIz1\fP first qubit 
+.br
+\fIz2\fP second qubit 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+ComplexNumber the outer product of the two qubits\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.transpose (\fBQubit\fP q)\fC [static]\fP"
+Calculate the transpose of qubit; |q>-> <q|
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq\fP qubit\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+ComplexNumber[][] 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.QuantumOperations\&.transpose (\fBComplexNumber\fP [] z)\fC [static]\fP"
+Calculate the transpose of qubit; |q>-> <q|
+.PP
+\fBParameters:\fP
+.RS 4
+\fIq\fP qubit\&. 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+ComplexNumber[][] 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for quantum - computing from the source code\&.

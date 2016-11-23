@@ -1,0 +1,8 @@
+<map id="com.ars.quantum.utils.MatrixOperations.multiply" name="com.ars.quantum.utils.MatrixOperations.multiply">
+<area shape="rect" id="node2" href="$classcom_1_1ars_1_1circuits_1_1_half_adder_cell.html#a540342262612af85393e1c07675fd7e9" title="com.ars.circuits.HalfAdder\lCell.getUnitaryMatrix" alt="" coords="265,5,440,47"/>
+<area shape="rect" id="node3" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations.html#ae7c98406e2a3c1d35d78538d82bd637d" title="com.ars.quantum.utils.Matrix\lOperations.multiply" alt="" coords="257,71,448,112"/>
+<area shape="rect" id="node4" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aabeb9f046a3146998afea51488839af6" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixMultiply\lDoubleDifferentSizes" alt="" coords="244,137,461,193"/>
+<area shape="rect" id="node5" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a32f8097861b74ba4b4ee3d601fcba520" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixMultiply\lDouble" alt="" coords="244,217,461,273"/>
+<area shape="rect" id="node6" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#a9ee4aca46fc14b35d2f779747e609239" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixMultiply\lComplexDifferentSizes" alt="" coords="244,297,461,353"/>
+<area shape="rect" id="node7" href="$classcom_1_1ars_1_1quantum_1_1utils_1_1_matrix_operations_test.html#aa87b6e37af0eb7ae67984f35548d64dc" title="com.ars.quantum.utils.Matrix\lOperationsTest.testMatrixMultiply\lComplex" alt="" coords="244,377,461,433"/>
+</map>

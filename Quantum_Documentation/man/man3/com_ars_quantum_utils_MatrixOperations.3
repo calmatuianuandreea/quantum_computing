@@ -1,0 +1,254 @@
+.TH "com.ars.quantum.utils.MatrixOperations" 3 "Wed Nov 23 2016" "quantum - computing" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.ars.quantum.utils.MatrixOperations \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBIncorrectMatrixSizeException\fP"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "static double [][] \fBmultiply\fP (double[][] a, double[][] b)  throws IncorrectMatrixSizeException "
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBmultiply\fP (\fBComplexNumber\fP[][] a, \fBComplexNumber\fP[][] b)  throws IncorrectMatrixSizeException "
+.br
+.ti -1c
+.RI "static double [][] \fBadd\fP (double[][] a, double[][] b)  throws IncorrectMatrixSizeException "
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBadd\fP (\fBComplexNumber\fP[][] a, \fBComplexNumber\fP[][] b)  throws IncorrectMatrixSizeException "
+.br
+.ti -1c
+.RI "static double [][] \fBsubtract\fP (double[][] a, double[][] b)  throws IncorrectMatrixSizeException "
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBsubtract\fP (\fBComplexNumber\fP[][] a, \fBComplexNumber\fP[][] b)  throws IncorrectMatrixSizeException "
+.br
+.ti -1c
+.RI "static boolean \fBareEqual\fP (double[][] a, double[][] b)"
+.br
+.ti -1c
+.RI "static boolean \fBareEqual\fP (\fBComplexNumber\fP[][] a, \fBComplexNumber\fP[][] b)"
+.br
+.ti -1c
+.RI "static double [][] \fBtensorProduct\fP (double[][] a, double[][] b)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBtensorProduct\fP (\fBComplexNumber\fP[][] a, \fBComplexNumber\fP[][] b)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBgenerateIdentityMatrix\fP (int numberOfRows)"
+.br
+.ti -1c
+.RI "static \fBComplexNumber\fP [][] \fBmultiplyByConstant\fP (\fBComplexNumber\fP[][] a, double ct)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Implementations of basic operations with 2D arrays 
+.SH "Member Function Documentation"
+.PP 
+.SS "static double [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.add (double a[][], double b[][]) throws IncorrectMatrixSizeException\fC [static]\fP"
+Performs the sum between 2 2D arrays of double
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of double 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.add (\fBComplexNumber\fP a[][], \fBComplexNumber\fP b[][]) throws IncorrectMatrixSizeException\fC [static]\fP"
+Performs the sum between 2 2D arrays of complex numbers
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of complex numbers 
+.RE
+.PP
+
+.SS "static boolean com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.areEqual (double a[][], double b[][])\fC [static]\fP"
+Check if 2 2D arrays of double are equal\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+boolean true if the two matrices are equal, otherwise false\&. 
+.RE
+.PP
+
+.SS "static boolean com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.areEqual (\fBComplexNumber\fP a[][], \fBComplexNumber\fP b[][])\fC [static]\fP"
+Check if 2 2D arrays of complex numbers are equal\&.
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+boolean true if the two matrices are equal, otherwise false\&. 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.generateIdentityMatrix (int numberOfRows)\fC [static]\fP"
+Generate an Identity matrix 
+.PP
+\fBParameters:\fP
+.RS 4
+\fInumberOfRows\fP the number of rows of the identity matrix 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of complex numbers 
+.RE
+.PP
+
+.SS "static double [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.multiply (double a[][], double b[][]) throws IncorrectMatrixSizeException\fC [static]\fP"
+Performs the multiplication between 2 2D arrays of double
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of double 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.multiply (\fBComplexNumber\fP a[][], \fBComplexNumber\fP b[][]) throws IncorrectMatrixSizeException\fC [static]\fP"
+Performs the multiplication between 2 2D arrays of complex numbers
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of complex numbers 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.multiplyByConstant (\fBComplexNumber\fP a[][], double ct)\fC [static]\fP"
+Perform multiplication between a matrix and a constant\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP matrix 
+.br
+\fIct\fP constant 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of complex numbers 
+.RE
+.PP
+
+.SS "static double [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.subtract (double a[][], double b[][]) throws IncorrectMatrixSizeException\fC [static]\fP"
+Performs the subtract between 2 2D arrays of double
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of double 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.subtract (\fBComplexNumber\fP a[][], \fBComplexNumber\fP b[][]) throws IncorrectMatrixSizeException\fC [static]\fP"
+Performs the subtract between 2 2D arrays of complex numbers
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of complex numbers 
+.RE
+.PP
+
+.SS "static double [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.tensorProduct (double a[][], double b[][])\fC [static]\fP"
+Performs the tensor product between 2 2D arrays of double
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of double 
+.RE
+.PP
+
+.SS "static \fBComplexNumber\fP [][] com\&.ars\&.quantum\&.utils\&.MatrixOperations\&.tensorProduct (\fBComplexNumber\fP a[][], \fBComplexNumber\fP b[][])\fC [static]\fP"
+Performs the tensor product between 2 2D arrays of complex numbers
+.PP
+\fBParameters:\fP
+.RS 4
+\fIa\fP first 2D array 
+.br
+\fIb\fP second 2D array 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+2D array of complex numbers 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for quantum - computing from the source code\&.

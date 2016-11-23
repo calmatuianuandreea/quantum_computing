@@ -1,0 +1,12 @@
+<map id="com.ars.complexnumbers.ComplexMathTest.testTan" name="com.ars.complexnumbers.ComplexMathTest.testTan">
+<area shape="rect" id="node2" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a390a771ed2ef544949621be5375c806a" title="com.ars.complexnumbers.Complex\lMath.divide" alt="" coords="555,285,781,326"/>
+<area shape="rect" id="node8" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a9c1d532e50ed32d01ccdb34d85e8765d" title="com.ars.complexnumbers.Complex\lMath.sin" alt="" coords="555,453,781,494"/>
+<area shape="rect" id="node10" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a0ef9a0fc1769a14c5f81f89866643f19" title="com.ars.complexnumbers.Complex\lMath.cos" alt="" coords="555,387,781,429"/>
+<area shape="rect" id="node11" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#af260af539eaec79d57b7e5363bda686e" title="com.ars.complexnumbers.Complex\lMath.tan" alt="" coords="280,394,507,435"/>
+<area shape="rect" id="node3" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a0283601c9ce6efc0636468ee5e65f299" title="com.ars.complexnumbers.Complex\lMath.multiply" alt="" coords="829,51,1056,93"/>
+<area shape="rect" id="node4" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a4cb4de35836a0ca818d3f2ce2df07736" title="com.ars.complexnumbers.Complex\lNumber.getReal" alt="" coords="1104,175,1331,217"/>
+<area shape="rect" id="node5" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_number.html#a611fa4712cc691cf1e13e91f182c1850" title="com.ars.complexnumbers.Complex\lNumber.getImaginary" alt="" coords="1104,343,1331,385"/>
+<area shape="rect" id="node6" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#aed293397f1ec0c1dda82589b436388c3" title="com.ars.complexnumbers.Complex\lMath.conjugate" alt="" coords="829,117,1056,158"/>
+<area shape="rect" id="node7" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a1ffa4f4678b201779a1ac8212fc93e05" title="com.ars.complexnumbers.Complex\lMath.mod" alt="" coords="829,285,1056,326"/>
+<area shape="rect" id="node9" href="$classcom_1_1ars_1_1complexnumbers_1_1_complex_math.html#a9a15203fe621aaa3738dd41d19b70b5f" title="com.ars.complexnumbers.Complex\lMath.exp" alt="" coords="829,453,1056,494"/>
+</map>

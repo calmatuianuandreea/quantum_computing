@@ -1,0 +1,102 @@
+.TH "md__c_1__users__dacian__desktop__quantum__quantum_quantum_computing-master__r_e_a_d_m_e" 3 "Wed Nov 23 2016" "quantum - computing" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__c_1__users__dacian__desktop__quantum__quantum_quantum_computing-master__r_e_a_d_m_e \- Quantum Computing 
+This project contains libraries written in Java for simulating quantum algorithms\&. I created this libraries because I saw that there is a lack of libraries for Java that simulate quantum algorithms and the already existing Java based simulators don't expose the API for using it in new projects\&.
+.PP
+.SS "Getting Started"
+.PP
+You can get a stable version of this project by checking the releases and downloading a zip archive\&. If you want a development version, you can download the project as a zip or clone it:
+.PP
+.PP
+.nf
+git clone https://github\&.com/23ars/quantum_computing\&.git
+.fi
+.PP
+.PP
+.SS "Prerequisities"
+.PP
+For using this project you'll need a JDK ( Java Development Kit) and Apache Maven\&.
+.PP
+.SS "Installing"
+.PP
+.IP "1." 4
+Run \fCmvn install\fP in \fBcomplexnumber\fP directory\&.
+.IP "2." 4
+Run \fCmvn install\fP in \fBquantum\fP directory
+.IP "3." 4
+Run \fCmvn package\fP in \fBquantumapp\fP directory\&.
+.PP
+.PP
+Note: If you want to use Eclipse as an IDE you need to perform an extra step in each directory: \fCmvn eclipse:eclipse\fP
+.PP
+.SS "Running the tests"
+.PP
+.SS "Complexnumber Junit Tests"
+.PP
+The Junit Tests that are in \fBcomplexnumber\fP project verify if operations with complex numbers are performed correctly and give the correct results\&. For running this tests you will have to run \fCmvn test\fP in \fBcomplexnumber\fP directory\&.
+.PP
+.PP
+.nf
+@Test
+public void testConjugate() {
+    ComplexNumber expectedNumber = new ComplexNumber(REAL_VALUE_FIRST_NO, -IMAGINARY_VALUE_FIRST_NO);
+    ComplexNumber realNumber = null;
+    realNumber = ComplexMath\&.conjugate(firstNumber);
+    assertEquals(expectedNumber, realNumber);
+}
+.fi
+.PP
+.PP
+.SS "QuantumLib Junit Tests"
+.PP
+The Junit Tests from \fBquantum\fP project verify if operations on qubits are performed correctly\&. To run the tests, you will have to run \fCmvn test\fP in \fBquantum\fP directory\&.
+.PP
+.PP
+.nf
+@RunWith(Suite\&.class)
+@SuiteClasses({
+    QuantumGatesTest\&.class,
+    QuantumOperationsTest\&.class,
+    QubitTest\&.class,
+    MatrixOperationsTest\&.class
+})
+public class AllTests {
+
+}
+.fi
+.PP
+.PP
+.SS "Deployment"
+.PP
+To install the libraries is enough to run \fCmvn install\fP\&. If you want to deploy them, you will have to run \fCmvn deploy\fP in each folder\&.
+.PP
+.SS "Built With"
+.PP
+.IP "\(bu" 2
+Apache Maven 3\&.3\&.9
+.PP
+.PP
+.SS "Contributing"
+.PP
+Please read \fBCONTRIBUTING\&.md\fP for details on our code of conduct, and the process for submitting pull requests to us\&.
+.PP
+.SS "Versioning"
+.PP
+We use \fCSemVer\fP for versioning\&. For the versions available, see the \fCtags on this repository\fP\&.
+.PP
+.SS "Authors"
+.PP
+.IP "\(bu" 2
+\fBMihai Seba\fP - \fIInitial work\fP - \fC23ars\fP
+.PP
+.PP
+See also the list of \fCcontributors\fP who participated in this project\&.
+.PP
+.SS "License"
+.PP
+This project is licensed under the GPL-3\&.0 License - see the \fBLICENSE\&.md\fP file for details
+.PP
+.SS "Acknowledgments"
+

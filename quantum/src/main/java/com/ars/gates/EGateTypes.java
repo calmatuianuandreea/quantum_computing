@@ -7,6 +7,11 @@ package com.ars.gates;
  */
 public enum EGateTypes {
 	/**
+	 * Toffoli Gate
+	 */
+	E_ToffoliGate,
+	
+	/**
 	 * Hadamard Gate
 	 */
 	E_HadamardGate,
@@ -22,4 +27,5 @@ public enum EGateTypes {
 	 * CNOT Gate
 	 */
 	E_CNotGate
+	
 }

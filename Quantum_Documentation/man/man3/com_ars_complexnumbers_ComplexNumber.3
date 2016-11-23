@@ -1,0 +1,161 @@
+.TH "com.ars.complexnumbers.ComplexNumber" 3 "Wed Nov 23 2016" "quantum - computing" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+com.ars.complexnumbers.ComplexNumber \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBComplexNumber\fP (double real, double imaginary)"
+.br
+.ti -1c
+.RI "\fBComplexNumber\fP ()"
+.br
+.ti -1c
+.RI "void \fBset\fP (double real, double imaginary)"
+.br
+.ti -1c
+.RI "void \fBsetReal\fP (double real)"
+.br
+.ti -1c
+.RI "double \fBgetReal\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetImaginary\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetImaginary\fP (double imaginary)"
+.br
+.ti -1c
+.RI "boolean \fBequals\fP (Object o)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.ti -1c
+.RI "double \fBgetArg\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.SH "\fBComplexNumber\fP"
+.PP
+.PP
+\fBComplexNumber\fP class represents the data type for complex numbers\&.
+.PP
+\fBAuthor:\fP
+.RS 4
+Mihai Seba 
+.RE
+.PP
+\fBVersion:\fP
+.RS 4
+1\&.0 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "com\&.ars\&.complexnumbers\&.ComplexNumber\&.ComplexNumber (double real, double imaginary)"
+Constructs a new \fC\fBComplexNumber\fP\fP object\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreal\fP the real part, Re(z), of the complex number 
+.br
+\fIimaginary\fP the imaginary part, Im(z), of the complex number 
+.RE
+.PP
+
+.SS "com\&.ars\&.complexnumbers\&.ComplexNumber\&.ComplexNumber ()"
+Constructs a new \fC\fBComplexNumber\fP\fP object with both real and imaginary parts 0\&. 
+.SH "Member Function Documentation"
+.PP 
+.SS "boolean com\&.ars\&.complexnumbers\&.ComplexNumber\&.equals (Object o)"
+Check if passed \fC\fBComplexNumber\fP\fP is equal to the current\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIo\fP the complex number to be checked 
+.RE
+.PP
+\fBReturns:\fP
+.RS 4
+true if the two complex numbers are equals, otherwise false 
+.RE
+.PP
+
+.SS "double com\&.ars\&.complexnumbers\&.ComplexNumber\&.getArg ()"
+Calculates the argument of the current complex number\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+arg(z) the argument of the complex number\&. 
+.RE
+.PP
+
+.SS "double com\&.ars\&.complexnumbers\&.ComplexNumber\&.getImaginary ()"
+Return the imaginary part of the complex number\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Im(z), the imaginary part of the complex number 
+.RE
+.PP
+
+.SS "double com\&.ars\&.complexnumbers\&.ComplexNumber\&.getReal ()"
+Return the real part of the complex number\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+Re(z), the real part of the complex number 
+.RE
+.PP
+
+.SS "void com\&.ars\&.complexnumbers\&.ComplexNumber\&.set (double real, double imaginary)"
+Set the real and the imaginary part of the complex number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreal\fP the real part, Re(z), of the complex number 
+.br
+\fIimaginary\fP the imaginary,Im(z), of the complex number 
+.RE
+.PP
+
+.SS "void com\&.ars\&.complexnumbers\&.ComplexNumber\&.setImaginary (double imaginary)"
+Set the imaginary part of the complex number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIimaginary\fP the imaginary part, Im(z), of the complex number 
+.RE
+.PP
+
+.SS "void com\&.ars\&.complexnumbers\&.ComplexNumber\&.setReal (double real)"
+Set the real part of the complex number\&. 
+.PP
+\fBParameters:\fP
+.RS 4
+\fIreal\fP the real part, Re(z), of the complex number 
+.RE
+.PP
+
+.SS "String com\&.ars\&.complexnumbers\&.ComplexNumber\&.toString ()"
+Return a string representation of the complex number\&. 
+.PP
+\fBReturns:\fP
+.RS 4
+string the representation of the complex number 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for quantum - computing from the source code\&.

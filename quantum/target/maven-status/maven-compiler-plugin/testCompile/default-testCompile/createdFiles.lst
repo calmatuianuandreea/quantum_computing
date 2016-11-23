@@ -1,0 +1,5 @@
+com\ars\gates\QuantumGatesTest.class
+com\ars\quantum\utils\QuantumOperationsTest.class
+com\ars\quantum\AllTests.class
+com\ars\quantum\utils\MatrixOperationsTest.class
+com\ars\qubits\QubitTest.class

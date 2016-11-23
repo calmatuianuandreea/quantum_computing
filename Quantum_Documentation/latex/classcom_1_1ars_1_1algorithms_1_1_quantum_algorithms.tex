@@ -1,0 +1,165 @@
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms}{}\section{com.\+ars.\+algorithms.\+Quantum\+Algorithms Class Reference}
+\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms}\index{com.\+ars.\+algorithms.\+Quantum\+Algorithms@{com.\+ars.\+algorithms.\+Quantum\+Algorithms}}
+
+
+Inheritance diagram for com.\+ars.\+algorithms.\+Quantum\+Algorithms\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+ars.\+algorithms.\+Quantum\+Algorithms\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a55a8e679534f3f4e5629504d4eae8fc9}{Quantum\+Algorithms} ()
+\item 
+\hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1ec69e5ec9aa5a35743950c4d4e50f62}{Quantum\+Algorithms} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1dee0d926787964b9c8d3daa6355dc70}{oracle})
+\item 
+void \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a71cfe9109e3a0ff9c2b7e5d4cc16c4d8}{set\+Oracle} (double\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1dee0d926787964b9c8d3daa6355dc70}{oracle})
+\item 
+abstract void \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae2f995342974067844f8cf671e156269}{init} ()
+\item 
+abstract void \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae36bd570c176a3f11b6a3ef666d49a9d}{run} ()
+\item 
+abstract void \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_afcae7e993d2d70942a7ffd6485c44b1e}{measure} ()
+\item 
+Logger \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a15adb03c61ab3d3fe4f6abfeac1eeaef}{get\+Logger} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1dee0d926787964b9c8d3daa6355dc70}{oracle}
+\item 
+\hyperlink{classcom_1_1ars_1_1qubits_1_1_qubit}{Qubit} \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ad04f21f877bc7d662c857a31ff07b65b}{result\+Qubit}
+\item 
+\hyperlink{classcom_1_1ars_1_1gates_1_1_gates_abstract_factory}{Gates\+Abstract\+Factory} \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a4a69f924d80667c1a262ef0c150c0a02}{gate\+Factory} = \hyperlink{classcom_1_1ars_1_1gates_1_1_gate_producer_a643829e30db1500430781afb9bc825e9}{Gate\+Producer.\+get\+Gate\+Factory}()
+\item 
+\hyperlink{classcom_1_1ars_1_1circuits_1_1_circuits_abstract_factory}{Circuits\+Abstract\+Factory} \hyperlink{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a862f92cacd8b83602459530e99791455}{circuit\+Factory} = \hyperlink{classcom_1_1ars_1_1circuits_1_1_circuit_producer_a309e58fbb248b354abc746f9a82233eb}{Circuit\+Producer.\+get\+Circuit\+Factory}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a55a8e679534f3f4e5629504d4eae8fc9}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a55a8e679534f3f4e5629504d4eae8fc9} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!Quantum\+Algorithms@{Quantum\+Algorithms}}
+\index{Quantum\+Algorithms@{Quantum\+Algorithms}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{Quantum\+Algorithms()}{QuantumAlgorithms()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+Quantum\+Algorithms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1ec69e5ec9aa5a35743950c4d4e50f62}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1ec69e5ec9aa5a35743950c4d4e50f62} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!Quantum\+Algorithms@{Quantum\+Algorithms}}
+\index{Quantum\+Algorithms@{Quantum\+Algorithms}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{Quantum\+Algorithms()}{QuantumAlgorithms()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+Quantum\+Algorithms (\begin{DoxyParamCaption}\item[{double}]{oracle\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a15adb03c61ab3d3fe4f6abfeac1eeaef}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a15adb03c61ab3d3fe4f6abfeac1eeaef} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!get\+Logger@{get\+Logger}}
+\index{get\+Logger@{get\+Logger}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{get\+Logger()}{getLogger()}}
+{\footnotesize\ttfamily Logger com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+get\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae2f995342974067844f8cf671e156269}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae2f995342974067844f8cf671e156269} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!init@{init}}
+\index{init@{init}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily abstract void com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae2f995342974067844f8cf671e156269_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_afcae7e993d2d70942a7ffd6485c44b1e}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_afcae7e993d2d70942a7ffd6485c44b1e} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!measure@{measure}}
+\index{measure@{measure}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{measure()}{measure()}}
+{\footnotesize\ttfamily abstract void com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+measure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_afcae7e993d2d70942a7ffd6485c44b1e_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae36bd570c176a3f11b6a3ef666d49a9d}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae36bd570c176a3f11b6a3ef666d49a9d} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!run@{run}}
+\index{run@{run}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily abstract void com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ae36bd570c176a3f11b6a3ef666d49a9d_icgraph}
+\end{center}
+\end{figure}
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a71cfe9109e3a0ff9c2b7e5d4cc16c4d8}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a71cfe9109e3a0ff9c2b7e5d4cc16c4d8} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!set\+Oracle@{set\+Oracle}}
+\index{set\+Oracle@{set\+Oracle}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{set\+Oracle()}{setOracle()}}
+{\footnotesize\ttfamily void com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+set\+Oracle (\begin{DoxyParamCaption}\item[{double}]{oracle\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a71cfe9109e3a0ff9c2b7e5d4cc16c4d8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a71cfe9109e3a0ff9c2b7e5d4cc16c4d8_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a862f92cacd8b83602459530e99791455}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a862f92cacd8b83602459530e99791455} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!circuit\+Factory@{circuit\+Factory}}
+\index{circuit\+Factory@{circuit\+Factory}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{circuit\+Factory}{circuitFactory}}
+{\footnotesize\ttfamily \hyperlink{classcom_1_1ars_1_1circuits_1_1_circuits_abstract_factory}{Circuits\+Abstract\+Factory} com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+circuit\+Factory = \hyperlink{classcom_1_1ars_1_1circuits_1_1_circuit_producer_a309e58fbb248b354abc746f9a82233eb}{Circuit\+Producer.\+get\+Circuit\+Factory}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a4a69f924d80667c1a262ef0c150c0a02}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a4a69f924d80667c1a262ef0c150c0a02} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!gate\+Factory@{gate\+Factory}}
+\index{gate\+Factory@{gate\+Factory}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{gate\+Factory}{gateFactory}}
+{\footnotesize\ttfamily \hyperlink{classcom_1_1ars_1_1gates_1_1_gates_abstract_factory}{Gates\+Abstract\+Factory} com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+gate\+Factory = \hyperlink{classcom_1_1ars_1_1gates_1_1_gate_producer_a643829e30db1500430781afb9bc825e9}{Gate\+Producer.\+get\+Gate\+Factory}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1dee0d926787964b9c8d3daa6355dc70}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_a1dee0d926787964b9c8d3daa6355dc70} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!oracle@{oracle}}
+\index{oracle@{oracle}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{oracle}{oracle}}
+{\footnotesize\ttfamily double \mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+oracle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\hypertarget{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ad04f21f877bc7d662c857a31ff07b65b}{}\label{classcom_1_1ars_1_1algorithms_1_1_quantum_algorithms_ad04f21f877bc7d662c857a31ff07b65b} 
+\index{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}!result\+Qubit@{result\+Qubit}}
+\index{result\+Qubit@{result\+Qubit}!com\+::ars\+::algorithms\+::\+Quantum\+Algorithms@{com\+::ars\+::algorithms\+::\+Quantum\+Algorithms}}
+\subsubsection{\texorpdfstring{result\+Qubit}{resultQubit}}
+{\footnotesize\ttfamily \hyperlink{classcom_1_1ars_1_1qubits_1_1_qubit}{Qubit} com.\+ars.\+algorithms.\+Quantum\+Algorithms.\+result\+Qubit\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dacian/\+Desktop/\+Quantum/\+Quantum/quantum\+\_\+computing-\/master/quantum/src/main/java/com/ars/algorithms/\hyperlink{_quantum_algorithms_8java}{Quantum\+Algorithms.\+java}\end{DoxyCompactItemize}

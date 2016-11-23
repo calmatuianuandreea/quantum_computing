@@ -1,0 +1,97 @@
+This project contains libraries written in Java for simulating quantum algorithms. I created this libraries because I saw that there is a lack of libraries for Java that simulate quantum algorithms and the already existing Java based simulators don\textquotesingle{}t expose the A\+PI for using it in new projects.
+
+\subsection*{Getting Started}
+
+You can get a stable version of this project by checking the releases and downloading a zip archive. If you want a development version, you can download the project as a zip or clone it\+:
+
+
+\begin{DoxyCode}
+git clone https://github.com/23ars/quantum\_computing.git
+\end{DoxyCode}
+
+
+\subsubsection*{Prerequisities}
+
+For using this project you\textquotesingle{}ll need a J\+DK ( Java Development Kit) and Apache Maven.
+
+\subsubsection*{Installing}
+
+
+\begin{DoxyEnumerate}
+\item Run {\ttfamily mvn install} in {\bfseries complexnumber} directory.
+\item Run {\ttfamily mvn install} in {\bfseries quantum} directory
+\item Run {\ttfamily mvn package} in {\bfseries quantumapp} directory.
+\end{DoxyEnumerate}
+
+Note\+: If you want to use Eclipse as an I\+DE you need to perform an extra step in each directory\+: {\ttfamily mvn eclipse\+:eclipse}
+
+\subsection*{Running the tests}
+
+\subsubsection*{Complexnumber Junit Tests}
+
+The Junit Tests that are in {\bfseries complexnumber} project verify if operations with complex numbers are performed correctly and give the correct results. For running this tests you will have to run {\ttfamily mvn test} in {\bfseries complexnumber} directory.
+
+
+\begin{DoxyCode}
+@Test
+\textcolor{keyword}{public} \textcolor{keywordtype}{void} testConjugate() \{
+    ComplexNumber expectedNumber = \textcolor{keyword}{new} ComplexNumber(REAL\_VALUE\_FIRST\_NO, -IMAGINARY\_VALUE\_FIRST\_NO);
+    ComplexNumber realNumber = null;
+    realNumber = ComplexMath.conjugate(firstNumber);
+    assertEquals(expectedNumber, realNumber);
+\}
+\end{DoxyCode}
+
+
+\subsubsection*{Quantum\+Lib Junit Tests}
+
+The Junit Tests from {\bfseries quantum} project verify if operations on qubits are performed correctly. To run the tests, you will have to run {\ttfamily mvn test} in {\bfseries quantum} directory.
+
+
+\begin{DoxyCode}
+@RunWith(Suite.class)
+@SuiteClasses(\{
+    QuantumGatesTest.class,
+    QuantumOperationsTest.class,
+    QubitTest.class,
+    MatrixOperationsTest.class
+\})
+\textcolor{keyword}{public} \textcolor{keyword}{class} AllTests \{
+
+\}
+\end{DoxyCode}
+
+
+\subsection*{Deployment}
+
+To install the libraries is enough to run {\ttfamily mvn install}. If you want to deploy them, you will have to run {\ttfamily mvn deploy} in each folder.
+
+\subsection*{Built With}
+
+
+\begin{DoxyItemize}
+\item Apache Maven 3.\+3.\+9
+\end{DoxyItemize}
+
+\subsection*{Contributing}
+
+Please read \hyperlink{_c_o_n_t_r_i_b_u_t_i_n_g_8md}{C\+O\+N\+T\+R\+I\+B\+U\+T\+I\+NG.md} for details on our code of conduct, and the process for submitting pull requests to us.
+
+\subsection*{Versioning}
+
+We use \href{http://semver.org/}{\tt Sem\+Ver} for versioning. For the versions available, see the \href{https://github.com/23ars/quantum_computing/tags}{\tt tags on this repository}.
+
+\subsection*{Authors}
+
+
+\begin{DoxyItemize}
+\item {\bfseries Mihai Seba} -\/ {\itshape Initial work} -\/ \href{https://github.com/23ars}{\tt 23ars}
+\end{DoxyItemize}
+
+See also the list of \href{https://github.com/23ars/quantum_computing/contributors}{\tt contributors} who participated in this project.
+
+\subsection*{License}
+
+This project is licensed under the G\+P\+L-\/3.\+0 License -\/ see the L\+I\+C\+E\+N\+SE.md file for details
+
+\subsection*{Acknowledgments}

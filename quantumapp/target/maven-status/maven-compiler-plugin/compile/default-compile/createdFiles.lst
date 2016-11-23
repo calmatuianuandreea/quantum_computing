@@ -1,0 +1,7 @@
+com\ars\quantumapp\DeutschRunner.class
+com\ars\algorithms\deutsch\DeutschsAlgorithm.class
+com\ars\algorithms\grover\GroversAlgorithm.class
+com\ars\algorithms\MeasurementPerformer.class
+com\ars\quantumapp\App.class
+com\ars\quantumapp\GroverRunner.class
+com\ars\algorithms\QuantumAlgorithms.class

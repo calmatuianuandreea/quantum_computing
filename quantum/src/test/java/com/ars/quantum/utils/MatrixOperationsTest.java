@@ -1,6 +1,5 @@
 package com.ars.quantum.utils;
 
-import com.ars.quantum.exception.NullValueException;
 import static org.junit.Assert.*;
 
 
@@ -9,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.ars.complexnumbers.ComplexNumber;
+import com.ars.quantum.utils.MatrixOperations.IncorrectMatrixSizeException;
 
 public class MatrixOperationsTest {
 
@@ -20,19 +20,31 @@ public class MatrixOperationsTest {
 	public void tearDown() throws Exception {
 	}
 
-	@Test(expected=NullValueException.class)
+	@Test
 	public void testMatrixAddDoublesDifferentLengths() {
 		double[][] a=new double[2][2];
 		double[][] b=new double[3][3];
-		double [][] c=MatrixOperations.add(a, b);
+		double[][] c=new double[3][3];
+		try {
+			c = MatrixOperations.add(a, b);
+		} catch (IncorrectMatrixSizeException e) {
+			System.out.println("Sorry you can not add a martix with size "+e.getFirstMatrix().length+"x"+e.getFirstMatrix()[0].length+" with a matrix with size "+e.getSecondMatrix().length+"x"+e.getSecondMatrix().length);
+			e.printStackTrace();
+		}
 		assertNull(c);
 	}
 	
-	@Test(expected=NullValueException.class)
+	@Test
 	public void testMatrixAddComplexDifferentLengths() {
 		ComplexNumber[][] a=new ComplexNumber[2][2];
 		ComplexNumber[][] b=new ComplexNumber[3][3];
-		ComplexNumber [][] c=MatrixOperations.add(a, b);
+		ComplexNumber[][] c=new ComplexNumber[3][3];
+		try {
+			c = MatrixOperations.add(a, b);
+		} catch (IncorrectMatrixSizeException e) {
+			System.out.println("Sorry you can not add a martix with size "+e.getFirstComplexMatrix().length +"x"+e.getFirstComplexMatrix()[0].length+" with a matrix with size "+e.getSecondComplexMatrix().length+"x"+e.getSecondComplexMatrix().length);
+			e.printStackTrace();
+		}
 		assertNull(c);
 	}
 	
@@ -40,7 +52,13 @@ public class MatrixOperationsTest {
 	public void testMatrixAddDouble(){
 		double[][] a={{1,1},{1,1}};
 		double[][] b={{2,2},{2,2}};
-		double[][] c=MatrixOperations.add(a, a);
+		double[][] c={{0,0},{0,0}};
+		try {
+			c = MatrixOperations.add(a, a);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		for(int i=0;i<2;i++){
 			for(int j=0;j<2;j++){
 				assertEquals(b[i][j], c[i][j],5e-10);
@@ -52,7 +70,13 @@ public class MatrixOperationsTest {
 	public void testMatrixAddComplex(){
 		ComplexNumber[][] a={{new ComplexNumber(1,0),new ComplexNumber(1,0)},{new ComplexNumber(1,0),new ComplexNumber(1,0)}};
 		ComplexNumber[][] b={{new ComplexNumber(2,0),new ComplexNumber(2,0)},{new ComplexNumber(2,0),new ComplexNumber(2,0)}};
-		ComplexNumber[][] c=MatrixOperations.add(a, a);
+		ComplexNumber[][] c={{new ComplexNumber(),new ComplexNumber()},{new ComplexNumber(), new ComplexNumber()}};
+		try {
+			c = MatrixOperations.add(a, a);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		for(int i=0;i<2;i++){
 			for(int j=0;j<2;j++){
 				assertEquals(b[i][j], c[i][j]);
@@ -60,19 +84,31 @@ public class MatrixOperationsTest {
 		}
 	}
 	
-	@Test(expected=NullValueException.class)
+	@Test
 	public void testMatrixSubtractDoublesDifferentLengths() {
 		double[][] a=new double[2][2];
 		double[][] b=new double[3][3];
-		double [][] c=MatrixOperations.subtract(a, b);
+		double[][] c=new double[4][4];
+		try {
+			c = MatrixOperations.subtract(a, b);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		assertNull(c);
 	}
 	
-	@Test(expected=NullValueException.class)
+	@Test
 	public void testMatrixSubtractComplexDifferentLengths() {
 		ComplexNumber[][] a=new ComplexNumber[2][2];
 		ComplexNumber[][] b=new ComplexNumber[3][3];
-		ComplexNumber [][] c=MatrixOperations.subtract(a, b);
+		ComplexNumber[][] c=new ComplexNumber[4][5];
+		try {
+			c = MatrixOperations.subtract(a, b);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		assertNull(c);
 	}
 	
@@ -80,7 +116,13 @@ public class MatrixOperationsTest {
 	public void testMatrixSubtractDouble(){
 		double[][] a={{2,2},{2,2}};
 		double[][] b={{4,4},{4,4}};
-		double[][] c=MatrixOperations.subtract(b, a);
+		double[][] c={{0,0},{0,0}};
+		try {
+			c = MatrixOperations.subtract(b, a);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		for(int i=0;i<2;i++){
 			for(int j=0;j<2;j++){
 				assertEquals(a[i][j], c[i][j],5e-10);
@@ -92,7 +134,13 @@ public class MatrixOperationsTest {
 	public void testMatrixSubtractComplex(){
 		ComplexNumber[][] a={{new ComplexNumber(2,2),new ComplexNumber(2,2)},{new ComplexNumber(2,2),new ComplexNumber(2,2)}};
 		ComplexNumber[][] b={{new ComplexNumber(4,4),new ComplexNumber(4,4)},{new ComplexNumber(4,4),new ComplexNumber(4,4)}};
-		ComplexNumber[][] c=MatrixOperations.subtract(b, a);
+		ComplexNumber[][] c={{new ComplexNumber(),new ComplexNumber()},{new ComplexNumber(),new ComplexNumber()}};
+		try {
+			c = MatrixOperations.subtract(b, a);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		for(int i=0;i<2;i++){
 			for(int j=0;j<2;j++){
 				assertEquals(a[i][j], c[i][j]);
@@ -142,11 +190,17 @@ public class MatrixOperationsTest {
 		assertEquals(false, MatrixOperations.areEqual(a, b));
 	}
 	
-	@Test(expected=NullValueException.class)
+	@Test
 	public void testMatrixMultiplyDoubleDifferentSizes(){
 		double[][] a=new double[2][2];
 		double[][] b=new double[3][3];
-		assertNull(MatrixOperations.multiply(a, b));
+		try {
+			assertNull(MatrixOperations.multiply(a, b));
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Sorry you are trying to multiply a matrix with size "+e.getFirstMatrix().length+ " with a matrix with size "+e.getSecondMatrix().length);
+			e.printStackTrace();
+		}
 	}
 	
 	@Test
@@ -154,7 +208,14 @@ public class MatrixOperationsTest {
 		double[][] a={{2,2},{2,2}};
 		double[][] b={{1,1},{1,1}};
 		double[][] c={{4,4},{4,4}};
-		double[][] d=MatrixOperations.multiply(a, b);
+		double[][] d={{0,0},{0,0}};
+		try {
+			d = MatrixOperations.multiply(a, b);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Sorry you are trying to multiply a matrix with size "+e.getFirstMatrix().length+ " with a matrix with size "+e.getSecondMatrix().length);
+			e.printStackTrace();
+		}
 		for(int i=0;i<2;i++){
 			for(int j=0;j<2;j++){
 				assertEquals(c[i][j], d[i][j],5e-10);
@@ -162,11 +223,17 @@ public class MatrixOperationsTest {
 		}
 	}
 	
-	@Test(expected=NullValueException.class)
+	@Test
 	public void testMatrixMultiplyComplexDifferentSizes(){
 		ComplexNumber[][] a=new ComplexNumber[2][2];
 		ComplexNumber[][] b=new ComplexNumber[3][3];
-		assertNull(MatrixOperations.multiply(a, b));
+		try {
+			assertNull(MatrixOperations.multiply(a, b));
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Sorry you are trying to multiply a matrix of complex numbers with size "+e.getFirstComplexMatrix().length+" with a matrix of complex numbers with size "+e.getSecondMatrix().length);
+			e.printStackTrace();
+		}
 	}
 	
 	@Test
@@ -174,7 +241,14 @@ public class MatrixOperationsTest {
 		ComplexNumber[][] a={{new ComplexNumber(1,0),new ComplexNumber(1,0)},{new ComplexNumber(1,0),new ComplexNumber(1,0)}};
 		ComplexNumber[][] b={{new ComplexNumber(2,0),new ComplexNumber(2,0)},{new ComplexNumber(2,0),new ComplexNumber(2,0)}};
 		ComplexNumber[][] c={{new ComplexNumber(4,0),new ComplexNumber(4,0)},{new ComplexNumber(4,0),new ComplexNumber(4,0)}};
-		ComplexNumber[][] d=MatrixOperations.multiply(a, b);
+		ComplexNumber[][] d={{new ComplexNumber(0,0),new ComplexNumber(0,0)},{new ComplexNumber(0,0),new ComplexNumber(0,0)}};
+		try {
+			d = MatrixOperations.multiply(a, b);
+		} catch (IncorrectMatrixSizeException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Sorry you are trying to multiply a matrix of complex numbers with size "+e.getFirstComplexMatrix().length+" with a matrix of complex numbers with size "+e.getSecondMatrix().length);
+			e.printStackTrace();
+		}
 		for(int i=0;i<2;i++){
 			for(int j=0;j<2;j++){
 				assertEquals(c[i][j], d[i][j]);
