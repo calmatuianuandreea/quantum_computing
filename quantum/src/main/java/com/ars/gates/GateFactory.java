@@ -26,6 +26,10 @@ public class GateFactory extends GatesAbstractFactory {
 			break;
 		case E_CNotGate:
 			gate = new CNotGate();
+			break;
+		case E_WiggleGate:
+			gate = new WiggleGate();
+			break;
 		}
 		return gate;
 	}

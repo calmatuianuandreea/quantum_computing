@@ -1,7 +1,7 @@
 package com.ars.gates;
 
 /*
- * Implementation  of Wiggle Gate
+ * Implementation of Wiggle Gate
  * 
  */
 
