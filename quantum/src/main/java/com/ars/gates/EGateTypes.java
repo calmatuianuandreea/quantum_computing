@@ -26,6 +26,11 @@ public enum EGateTypes {
 	/**
 	 * CNOT Gate
 	 */
-	E_CNotGate
+	E_CNotGate,
+	
+	/*
+	 * Wiggke Gate
+	 */
+	E_WiggleGate
 	
 }
