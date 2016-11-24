@@ -6,13 +6,6 @@ import com.ars.complexnumbers.ComplexMath;
 import com.ars.complexnumbers.ComplexNumber;
 
 /**
- * Implementations of basic operations with 2D arrays
- * 
- *
- */
-public class MatrixOperations {
-
-	/**
 	 * 
 	 * @author Dacian
 	 * 
@@ -39,6 +32,15 @@ public class MatrixOperations {
 			matrixOperation = operation;
 			
 		}
+
+/**
+ * Implementations of basic operations with 2D arrays
+ * 
+ *
+ */
+public class MatrixOperations {
+
+	
 		
 		public IncorrectMatrixSizeException(String operation, ComplexNumber[][] a2, ComplexNumber[][] b2) {
 			// TODO Auto-generated constructor stub
