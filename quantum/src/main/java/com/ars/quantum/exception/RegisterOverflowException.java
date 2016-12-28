@@ -1,4 +1,4 @@
-package com.ars.qubits;
+package com.ars.quantum.exception;
 
 public class RegisterOverflowException extends Exception {
 	/**

@@ -7,11 +7,11 @@ import java.util.stream.Stream;
 
 import com.ars.complexnumbers.ComplexNumber;
 import com.ars.gates.IGate;
+import com.ars.quantum.exception.RegisterOverflowException;
 import com.ars.qubits.QRegister;
 import com.ars.qubits.Qubit;
 import com.ars.qubits.QubitOne;
 import com.ars.qubits.QubitZero;
-import com.ars.qubits.RegisterOverflowException;
 
 public class QRegisters {
 

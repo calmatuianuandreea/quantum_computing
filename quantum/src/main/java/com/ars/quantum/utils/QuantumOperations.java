@@ -1,11 +1,12 @@
 package com.ars.quantum.utils;
 
-import com.ars.quantum.exception.NullValueException;
+import com.ars.quantum.exception.IncorrectMatrixSizeException;
 import java.util.List;
 
 import com.ars.complexnumbers.ComplexMath;
 import com.ars.complexnumbers.ComplexNumber;
 import com.ars.gates.IGate;
+import com.ars.qubits.QRegister;
 import com.ars.qubits.Qubit;
 
 /**
@@ -37,7 +38,7 @@ public class QuantumOperations {
 	 */
 	public static Qubit entangle(Qubit...qubits){
 		Qubit bufferQubit=qubits[0];
-		for(int i=0;i<qubits.length;i++){
+		for(int i=1;i<qubits.length;i++){
 			bufferQubit = performTensorProduct(bufferQubit, qubits[i]);
 		}
 		return bufferQubit;
@@ -50,20 +51,16 @@ public class QuantumOperations {
 	 * @param quantumRegister 
 	 * @return qubit the tensor product of the two qubits.
 	 */
-	public static Qubit entangle(List<Qubit> qubitsList) {
- 		if (qubitsList.size() < 2) {
-   			return null;
-  		}
- 		Qubit bufferQubit = qubitsList.get(0);
- 		for (int i = 1; i < qubitsList.size(); i++) {
- 			bufferQubit = performTensorProduct(bufferQubit, qubitsList.get(i));
-   		}
- 		
- 		if(bufferQubit == null)
- 			throw new NullValueException("returned value is null for method entangle");
- 		else
- 			return bufferQubit;
-  	}
+	public static Qubit entangle(QRegister quantumRegister) {
+		if (quantumRegister.size() < 2) {
+			return null;
+		}
+		Qubit bufferQubit = quantumRegister.get(0);
+		for (int i = 1; i < quantumRegister.size(); i++) {
+			bufferQubit = performTensorProduct(bufferQubit, quantumRegister.get(i));
+		}
+		return bufferQubit;
+	}
 
 	private static Qubit performTensorProduct(Qubit q1, Qubit q2) {
 		int len1 = q1.getQubit().length;
@@ -95,11 +92,8 @@ public class QuantumOperations {
 			complexNumberList[i] = sum;
 		}
 		q0 = new Qubit(complexNumberList);
+		return q0;
 
-		if(q0 == null)
-			throw new NullValueException("returned value is null for method apply");
-		else
-			return q0;
 	}
 	
 	private static Qubit apply(Qubit q, ComplexNumber[][] gate) {
@@ -118,11 +112,7 @@ public class QuantumOperations {
 			complexNumberList[i] = sum;
 		}
 		q0 = new Qubit(complexNumberList);
-		
-		if(q0 == null)
-			throw new NullValueException("returned value is null for method apply");
-		else
-			return q0;
+		return q0;
 
 	}
 
@@ -167,10 +157,7 @@ public class QuantumOperations {
 			transpose[0][i] = z[i];
 		}
 
-		if(transpose == null)
-			throw new NullValueException("returned value is null for method calculateTranspose");
-		else
-			return transpose;
+		return transpose;
 	}
 
 	/**
@@ -212,12 +199,11 @@ public class QuantumOperations {
 					sum = new ComplexNumber();
 				}
 			}
+		}else{
+			throw new IncorrectMatrixSizeException("Both state arrays must have the same size.");
 		}
-		
-		if(result == null)
-			throw new NullValueException("returned value is null for method calculateOuterProduct");
-		else
-			return result;
+	
+		return result;
 	}
 
 	
@@ -253,12 +239,11 @@ public class QuantumOperations {
 			for (int i = 0; i < numberOfRows; i++) {
 				result = ComplexMath.add(result, ComplexMath.multiply(transposeFirstArray[0][i], z2[i]));
 			}
+		}else{
+			throw new IncorrectMatrixSizeException("Both state arrays must have the same size.");
 		}
-		
-		if(result == null)
-			throw new NullValueException("returned value is null for method calculateInnerProduct");
-		else
-			return result;
+	
+		return result;
 	}
 
 	/**

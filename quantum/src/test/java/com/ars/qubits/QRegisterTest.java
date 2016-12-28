@@ -6,6 +6,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.ars.quantum.exception.RegisterOverflowException;
+
 public class QRegisterTest {
 	private QRegister			qRegister;
 	private static final int	REGISTER_LENGTH	= 3;

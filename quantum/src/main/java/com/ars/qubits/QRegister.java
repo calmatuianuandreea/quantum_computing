@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import com.ars.quantum.exception.RegisterOverflowException;
 import com.ars.quantum.utils.QRegisters;
+
 
 public class QRegister implements Iterable<Qubit> {
 	private List<Qubit>	qubitRegister;

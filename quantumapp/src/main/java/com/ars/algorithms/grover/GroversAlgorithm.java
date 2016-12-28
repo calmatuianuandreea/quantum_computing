@@ -110,37 +110,5 @@ public class GroversAlgorithm extends QuantumAlgorithms {
 		}
 	}
 
-	private Optional<Integer> foo(Integer b) {
-		System.out.println(b + 20);
-		return null;
-	}
-
-	private int and(int x, int y, int z) {
-		return x & y & z;
-	}
-
-	public void createOracleMatrix() {
-		int noOfRows = (int) Math.pow(2, NO_OF_INPUT);
-		oracleMatrix = new double[noOfRows][noOfRows];
-		for (int i = 0; i < noOfRows; i++)
-			Arrays.fill(oracleMatrix[i], 0);
-		int count = 0x00;
-		for (int i = 0; i < noOfRows; i++) {
-			for (int j = 0; j < noOfRows; j++) {
-				if (i == j) {
-					int value = oracle(val -> and((count & (1 << 0)), (count & (1 << 1)), (count & (1 << 2))));
-
-					oracleMatrix[i][j] = Math.pow(-1, value);
-
-				}
-			}
-		}
-
-	}
-
-	private <T, R> R oracle(Function<T, R> f) {
-		// |x>-> (-1)^f(x)|x>
-		return f.apply(null);
-	}
 
 }
